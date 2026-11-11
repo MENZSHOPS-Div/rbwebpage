@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en"><!-- Basic -->
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ 
+     <!-- Site Metas -->
+    <title>R&B Medical Laboratory</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Pogo Slider CSS -->
+    <link rel="stylesheet" href="css/pogo-slider.min.css">
+	<!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">    
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+ <style>
+    
+    .modal {
+	  margin-top: 150px;
+	  margin-left: 600px;
+      width: 700px;
+      height: 500px;
+      display: flex;
+      overflow: hidden;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 12px 36px rgb(0 0 0 / 15%);
+    }
+
+    .modal-image {
+      width: 42%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .modal-content {
+      flex: 1;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      
+    }
+
+    .modal-content h2 {
+      margin: 0 0 12px;
+      color: #222;
+    }
+
+    .modal-content p {
+      margin: 0;
+      line-height: 1.6;
+      color: #666;
+    }
+	.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    border: 0;
+    background: transparent;
+    color: #555;
+    font-size: 26px;
+    line-height: 1;
+    cursor: pointer;
+  }
+
+  .modal-close:hover {
+    color: #111;
+  }
+
+  .description{
+	text-align: start;
+  }
+    @media (max-width: 540px) {
+      .modal {
+        width: calc(100% - 32px);
+      }
+    }
+  </style>
+<body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
+
+	<!-- LOADER -->
+     <!-- <div id="preloader">
+		<div class="loader">
+			<img src="images/preloader.gif" alt="" />
+		</div>
+    </div>end loader -->
+    <!-- END LOADER -->
+	
+	<!-- Start top bar -->
+	
+	<!-- Start header -->
+	<header class="top-header">
+		<nav class="navbar header-nav navbar-expand-lg">
+            <div class="container">
+				<a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="image" style="max-width: 60px;"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+                    <ul class="navbar-nav">
+                        <li><a class="nav-link active" href="#home">Home</a></li>
+                        <li><a class="nav-link" href="#about">เกี่ยวกับเรา</a></li>
+                        <li><a class="nav-link" href="#services">บริการ</a></li>
+						<li><a class="nav-link" href="#gallery">แพคเกจ</a></li>
+						<li><a class="nav-link" href="#team">ติดต่อเรา</a></li>
+                        <li><a class="nav-link" href="https://www.mobilecheckups2026.org" target="_blank">ผลตรวจออนไลน์</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+	</header>
+	<!-- End header -->
+	
+	<!-- Start Banner -->
+	<div class="ulockd-home-slider">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="pogoSlider" id="js-main-slider">
+					<div class="pogoSlider-slide" data-transition="fade" data-duration="1500" style="background-image:url(images/slider-01.jpg);">
+					
+					</div>
+					<div class="pogoSlider-slide" data-transition="fade" data-duration="1500" style="background-image:url(images/slider-02.jpg);">
+						
+					</div>
+					<div class="pogoSlider-slide" data-transition="fade" data-duration="1500" style="background-image:url(images/slider-03.jpg);">
+						
+						
+					</div>
+				</div><!-- .pogoSlider -->
+			</div>
+		</div>
+	</div>
+	<!-- End Banner -->
+	
+	<!-- Start About us -->
+	<div id="about" class="about-box">
+		<div class="about-a1">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="title-box">
+							<h2>R&B Lab</h2>
+							<p>ให้บริการตรวจสุขภาพอย่างครอบคลุม </p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						<div class="row align-items-center about-main-info">
+							<div class="col-lg-6 col-md-6 col-sm-12">
+								<h2> Welcome to R&B Medical</h2>
+								<p>R&B Medical Laboratory รับตรวจสุขภาพและผู้นำด้านบริการตรวจวิเคราะห์ทางห้องปฏิบัติการทางการแพทย์ที่เปิดให้บริการมากกว่า 28 ปี บริการรับตรวจสุขภาพและตรวจวิเคราะห์ทางห้องปฏิบัติการอย่างครบครันทั้งในและนอกสถานที่โดยแพทย์ พยาบาล สหวิชาชีพ และเจ้าหน้าที่มืออาชีพที่มีทักษะและความชำนาญการโดยตรง ร่วมกับการใช้เทคโนโลยีและเครื่องมือที่มีคุณภาพสูง ทันสมัย ให้ผลการวิเคราะห์ที่ถูกต้อง แม่นยำ พร้อมประกันคุณภาพตามมาตรฐานสากล</p>
+								<p>นอกจากนี้ R&B ยังให้บริการเช้ารถเอ็กซเรย์ระบบดิจิตอล อุปกรณ์ตรวจสุขภาพที่ทันสมัย และจัดหาบุคลากรมืออาชีพ สำหรับหน่วยงานตรวจสุขภาพเคลื่อนที่ด้วย</p>
+								
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-12">
+								<div class="about-m">
+									<ul id="banner">
+										<li>
+											<img src="images/about-img-01.jpg" alt="">
+										</li>
+										<li>
+											<img src="images/about-img-02.jpg" alt="">
+										</li>
+										<li>
+											<img src="images/about-img-03.jpg" alt="">
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End About us -->
+	
+	<!-- Start Services -->
+	<div id="services" class="services-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="title-box">
+						<h2>บริการของเรา</h2>
+						
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="owl-carousel owl-theme">
+						<div class="item">
+							<div class="serviceBox">
+								<div class="service-icon"><i class="fa fa-h-square" aria-hidden="true"></i></div>
+								<h3 class="title">ตรวจสุขภาพ</h3>
+								<p class="description">
+									บริการตรวจสุขภาพทั่วไปบริการด้วยห้องแลปที่ทันสมัย ปลอดเชื้อ และผลที่แม่นยำ.
+								</p>
+								<button class="new-btn-d br-2 border border-success text-success" onclick="openModal()">Read More</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="serviceBox">
+								<div class="service-icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
+								<h3 class="title">ตรวจสุขภาพเคลื่อนที่</h3>
+								<p class="description">
+									บริการตรวจสุขภาพเคลื่อนที่ให้บริการทั่วไป พร้อมทีมงานคุณภาพและอุปกรณ์ที่ทันสมัย
+								</p>
+								<button class="new-btn-d br-2 border border-success text-success" onclick="openModal2()">Read More</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="serviceBox">
+								<div class="service-icon"><i class="fa fa-hospital-o" aria-hidden="true"></i></div>
+								<h3 class="title">ให้เช่ารถเอ็กซเรย์ระบบดิจิตอล</h3>
+								<p class="description">
+									บริการให้เช่ารถเอ็กซเรย์ระบบดิจิตอลพร้อมเจ้าหน้าที่
+								</p>
+								<button class="new-btn-d br-2 border border-success text-success" onclick="openModal3()">Read More</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="serviceBox">
+								<div class="service-icon"><i class="fa fa-stethoscope" aria-hidden="true"></i></div>
+								<h3 class="title">จัดหาบุคลากรสำหรับงานตรวจสุขภาพ</h3>
+								<p class="description">
+									บริการจัดหาบุคลากรมืออาชีพ สำหรับหน่วยงานตรวจสุขภาพเคลื่อนที่
+								</p>
+								<button class="new-btn-d br-2 border border-success text-success" onclick="openModal4()">Read More</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="serviceBox">
+								<div class="service-icon"><i class="fa fa-wheelchair" aria-hidden="true"></i></div>
+								<h3 class="title">ให้เช่าเครื่องมือตรวจอาชีวอนามัย</h3>
+								<p class="description">
+									บริการให้เช่าเครื่องมือตรวจอาชีวอนามัยทุกชนิด 
+								</p>
+								<button class="new-btn-d br-2 border border-success text-success" onclick="openModal5()">Read More</button>
+							</div>
+						</div>
+						
+					
+					</div>
+				</div>
+			</div>			
+		</div>
+	</div>
+	<!-- End Services -->
+	
+	
+	
+	<!-- Start Gallery -->
+	<div id="gallery" class="gallery-box">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="title-box">
+						<h2>แพคเกจพิเศษ</h2>
+						<p>เหมารวมรายการตรวจเป็นแพคเกจพิเศษสำหรับทุกกลุ่มลูกค้า</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="popup-gallery row clearfix">
+				<div class="col-md-3 col-sm-6">
+					<div class="box-gallery">
+						<img src="images/gallery-01.jpg" alt="">
+						<div class="box-content">	
+							<h3 class="title">รายละเอียดแพ็กเกจ</h3>
+							<ul class="icon">
+								<li><a href="images/gallery-05.jpg"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>								
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="box-gallery">
+						<img src="images/gallery-02.jpg" alt="">
+						<div class="box-content">
+							<h3 class="title">รายละเอียดแพ็กเกจ</h3>
+							<ul class="icon">
+								<li><a href="images/gallery-06.jpg"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>								
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">					
+					<div class="box-gallery">
+						<img src="images/gallery-03.jpg" alt="">
+						<div class="box-content">	
+							<h3 class="title">รายละเอียดแพ็กเกจ</h3>						
+							<ul class="icon">
+								<li><a href="images/gallery-07.jpg"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>								
+							</ul>
+						</div>
+					</div>
+				</div>
+			<div class="col-md-3 col-sm-6">					
+					<div class="box-gallery">
+						<img src="images/gallery-04.jpg" alt="">
+						
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<!-- End Gallery -->
+	
+	<!-- Start Team -->
+	<div id="team" class="team-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="title-box">
+						<h2>เอกสารสำคัญ</h2>
+						<p></p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="images/img-1.jpg" alt="">
+                        </div>
+                       
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="images/img-2.jpg" alt="">
+                        </div>
+                      
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="images/img-3.jpg" alt="">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+			
+		</div>
+	</div>
+	
+	<!-- End Team -->
+	
+	
+	
+	<!-- Start Contact -->
+	<div id="contact" class="contact-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="title-box">
+						<h2>ติดต่อเรา</h2>
+						<p></p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				
+				<div class="col-lg-12 col-xs-12">
+				  <div class="contact-block">
+					<form id="contactForm">
+					  <div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name">
+								<div class="help-block with-errors"></div>
+							</div>                                 
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<input type="text" placeholder="Your Email" id="email" class="form-control" name="name" required data-error="Please enter your email">
+								<div class="help-block with-errors"></div>
+							</div> 
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<input type="text" placeholder="Your number" id="number" class="form-control" name="number" required data-error="Please enter your number">
+								<div class="help-block with-errors"></div>
+							</div> 
+						</div>
+						<div class="col-md-12">
+							<div class="form-group"> 
+								<textarea class="form-control" id="message" placeholder="Your Message" rows="8" data-error="Write your message" required></textarea>
+								<div class="help-block with-errors"></div>
+							</div>
+							<div class="submit-button text-center">
+								<button class="btn btn-common" id="submit" type="submit">Send Message</button>
+								<div id="msgSubmit" class="h3 text-center hidden"></div> 
+								<div class="clearfix"></div> 
+							</div>
+						</div>
+					  </div>            
+					</form>
+				  </div>
+				</div>
+				
+				
+				<div class="col-lg-12 col-xs-12">
+					<div class="left-contact">
+						<h2>Contact</h2>
+						<div class="media cont-line">
+							<div class="media-left icon-b">
+								<i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+							</div>
+							<div class="media-body dit-right">
+								<h4>ติดต่องานตรวจสุขภาพ</h4>
+								<p class="fw-bold fs-4">092-636-8867</p>
+								<p class="fw-bold">คุณ อุทุมพร (บิ๊ก)</p>
+							</div>
+						</div>
+						<div class="media cont-line">
+							<div class="media-left icon-b">
+								<i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+							</div>
+							<div class="media-body dit-right">
+								<h4>ติดต่องานเช่า</h4>
+								<p class="fw-bold fs-4">098-920-2270</p>
+								<p class="fw-bold">คุณ รุ้งตะวัน (รุ้ง)</p>
+							</div>
+						</div>
+						<div class="media cont-line">
+							<div class="media-left icon-b">
+								<i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+							</div>
+							<div class="media-body dit-right">
+								<h4>ติดต่อสมัครงาน</h4>
+								<p class="fw-bold fs-4">095-334-5435</p>
+								<p class="fw-bold">คุณ ชลธี (ไม้)</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+		</div>
+	</div>
+	<!-- End Contact -->
+	
+	
+	 <section id="modal1"  style="display:none;" >
+	<modal class="modal" role="dialog" aria-labelledby="modal-title" >
+    <img
+      class="modal-image"
+      src="images/check1.jpg"
+      alt="ภาพประกอบ"
+    />
+
+    <div class="modal-content">
+      <h2 id="modal-title">บริการตรวจสุขภาพ</h2>
+      <p>บริการตรวจสุขภาพด้วยการเจาะเลือด เก็บปัสสาวะ นำไปวิเคราะห์ในห้องปฎิบัติการ ด้วยเครื่องมือทันสมัย ผลตรวจแม่นยำ อ่านผลด้วยเทคนิคการแพทย์  
+		ออกผลตรวจ 1 ชั่วโมงหลังจากเก็บตัวอย่าง พร้อมแพคเกจสุดพิเศษที่ใครๆก็เข้าถึงได้ สุขภาพที่ดีเริ่มจากการใส่ใจและรู้เท่าทันร่างกายของตนเอง การตรวจสุขภาพเป็นประจำช่วยให้คุณได้ติดตามข้อมูลสุขภาพเบื้องต้น และวางแผนดูแลตัวเองได้เหมาะสมยิ่งขึ้น
+ขอเชิญทุกท่านเข้ารับบริการตรวจสุขภาพที่ R&B Medical Laboratory เราพร้อมให้บริการตรวจวิเคราะห์ทางห้องปฏิบัติการโดยบุคลากรผู้เชี่ยวชาญ พร้อมให้คำแนะนำเกี่ยวกับการเตรียมตัวก่อนตรวจตามรายการที่เลือก
+ไม่ว่าจะตรวจสุขภาพประจำปี หรือต้องการติดตามผลตรวจเดิม อย่ารอให้มีอาการแล้วค่อยเริ่มดูแลตัวเอง
+รายการตรวจและการเตรียมตัวอาจแตกต่างกัน กรุณาสอบถามคลินิกก่อนเข้ารับบริการ
+	  </p>
+	    <button class="modal-close" type="button" aria-label="ปิด" onclick="closeModal()">
+    &times;
+  </button>
+    </div>
+</modal>
+</section>
+  <script>
+       function openModal() {
+    document.getElementById("modal1").style.display = "block";
+	
+	
+  }
+
+  function closeModal() {
+    document.getElementById("modal1").style.display = "none";
+  }
+
+  </script>
+
+   <section id="modal2"  style="display:none;" >
+	<modal class="modal" role="dialog" aria-labelledby="modal-title" >
+    <img
+      class="modal-image"
+      src="images/check2.png"
+      alt="ภาพประกอบ"
+    />
+
+    <div class="modal-content">
+      <h2 id="modal-title">บริการตรวจสุขภาพ</h2>
+      <p>บริการตรวจสุขภาพนอกสถานที่ อาทิ โรงงาน สำนักงาน สถานประกอบการ หรือสถานที่ที่กำหนด ทั้งในกรุงเทพฯ และต่างจังหวัด โดยมีทีมแพทย์ พยาบาล สหวิชาชีพ พร้อมด้วยทีมงานด้านชีวอนามัย ที่มีความชำนาญ และมีประสบการณ์สูง พร้อมให้บริการตรวจสุขภาพ อาทิ การตรวจสุขภาพก่อนเข้าทำงาน การตรวจสุขภาพประจำปี หรือการฉีดวัคซีน เป็นต้น หน่วยตรวจสุขภาพเคลื่อนที่ 
+		อำนวยความสะดวกในการตรวจสุขภาพนอกสถานที่ด้วยเทคโนโลยีและเครื่องมือที่ทันสมัย ให้ผลการวิเคราะห์ที่ถูกต้อง แม่นยำ จัดส่งผลอย่างรวดเร็ว โดยสามารถรองรับผู้รับบริการได้ทั้งภาครัฐและเอกชน
+	บริการตรวจให้ถึงออฟิศด้วยเจ้าหน้าที่และบุคลากรทางการแพทย์ อุปกรณ์ตรวจที่มีมาตรฐานและบริการด้วยความตั้งใจ </p>
+	    <button class="modal-close" type="button" aria-label="ปิด" onclick="closeModal2()">
+
+    &times;
+  </button>
+    </div>
+</modal>
+</section>
+  <script>
+       function openModal2() {
+    document.getElementById("modal2").style.display = "block";
+	
+	
+  }
+
+  function closeModal2() {
+    document.getElementById("modal2").style.display = "none";
+  }
+
+  </script>
+
+     <section id="modal3"  style="display:none;" >
+	<modal class="modal" role="dialog" aria-labelledby="modal-title" >
+    <img
+      class="modal-image"
+      src="images/check3.png"
+      alt="ภาพประกอบ"
+    />
+
+    <div class="modal-content">
+      <h2 id="modal-title">บริการให้เช่ารถเอ็กซเรย์</h2>
+      <p>บริการนี้เหมาะสำหรับ สถานพยาบาล/รพ.ที่ต้องการใช้บริการเอกซเรย์ดิจิตอลอย่างเดียว หรือหน่วยงาน/บริษัท ที่มีบุคลากรที่มีความเสี่ยงต่อการเกิดโรคปอด ต้องการตรวจเอกซเรย์ปอดเพียงอย่างเดียว พร้อมการรายงานผลจากรังสีแพทย์ โดยรายงานผลเป็นซีดีฉบับรวมสำหรับแผนกบุคคล 
+		และซีดีแยกแผ่นรายบุคคลสำหรับผู้รับการตรวจแต่ละราย นอกจากนี้ ยังมีบริการรับอ่านฟิล์มโดยรังสีแพทย์ สำหรับสถานพยาบาล/ผู้ประกอบการที่ไม่มีรังสีแพทย์ประจำ</p>
+	    <button class="modal-close" type="button" aria-label="ปิด" onclick="closeModal3()">
+
+    &times;
+  </button>
+    </div>
+</modal>
+</section>
+  <script>
+       function openModal3() {
+    document.getElementById("modal3").style.display = "block";
+	
+	
+  }
+
+  function closeModal3() {
+    document.getElementById("modal3").style.display = "none";
+  }
+
+  </script>
+
+   <section id="modal4"  style="display:none;" >
+	<modal class="modal" role="dialog" aria-labelledby="modal-title" >
+    <img
+      class="modal-image"
+      src="images/check4.png"
+      alt="ภาพประกอบ"
+    />
+
+    <div class="modal-content">
+      <h2 id="modal-title">บริการจัดหาบุคลากรทางการแพทย์</h2>
+      <p>บริการจัดหาเจ้าหน้าที่วิชาชีพอิสระ มากด้วย ความรู้ ความสามารถ ประสบการณ์ และ เอกสารประกอบวิชาชีพ สำหรับหน่วยงานตรวจสุขภาพที่ต้องการเจจ้าหน้าที่เสริม เรายินดีจัดหาให้ท่าน
+		ไม่ว่าจะเป็น นักศึกษาพยาบาล ทำหน้าที่วัดความดัน , ผู้ช่วยเทคนิคการแพทย์ ทำหน้าที่เก็บตัวอย่างตรวจ , เจ้าหน้าที่อาชีวอนามัย ทุกท่านล้วนผ่านการฝึกอบรมวิชาชีพและมีความสามารถสูงและบริการที่ดี
+	  </p>
+	    <button class="modal-close" type="button" aria-label="ปิด" onclick="closeModal4()">
+
+    &times;
+  </button>
+    </div>
+</modal>
+</section>
+  <script>
+       function openModal4() {
+    document.getElementById("modal4").style.display = "block";
+	
+	
+  }
+
+  function closeModal4() {
+    document.getElementById("modal4").style.display = "none";
+  }
+
+  </script>
+
+   <section id="modal5"  style="display:none;" >
+	<modal class="modal" role="dialog" aria-labelledby="modal-title" >
+    <img
+      class="modal-image"
+      src="images/check5.png"
+      alt="ภาพประกอบ"
+    />
+
+    <div class="modal-content">
+      <h2 id="modal-title">บริการให้เช่าเครื่องตรวจอาชีวอนามัย</h2>
+      <p>บริการให้เช่าเครื่องตรวจอาชีวอนามัย เครื่องตรวจคลื่นหัวใจ เครื่องเป่าปอด เครื่องตรวจตาเชิงลึก ตู้ตรวจการได้ยินพร้อมติดตั้ง และเจ้าหน้าที่ประจำเครื่อง บริการท่านด้วยเครื่องมือที่ปรับค่ามาตรฐานตามเกณฑ์ ให้ผลที่แม่นยำ
+	  </p>
+	    <button class="modal-close" type="button" aria-label="ปิด" onclick="closeModal5()">
+
+    &times;
+  </button>
+    </div>
+</modal>
+</section>
+  <script>
+       function openModal5() {
+    document.getElementById("modal5").style.display = "block";
+	
+	
+  }
+
+  function closeModal5() {
+    document.getElementById("modal5").style.display = "none";
+  }
+
+  </script>
+	
+	<!-- Start Footer -->
+	<footer class="footer-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="footer-company-name">All Rights Reserved. &copy; 2018 <a href="#">R&B Medical Laboratory</a> Design By : <a href="https://html.design/">R&B Developer team/a></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End Footer -->
+	
+	<a href="#" id="scroll-to-top" class="new-btn-d br-2"><i class="fa fa-angle-up"></i></a>
+
+	<!-- ALL JS FILES -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.pogo-slider.min.js"></script> 
+	<script src="js/slider-index.js"></script>
+	<script src="js/smoothscroll.js"></script>
+	<script src="js/TweenMax.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+	<script src="js/isotope.min.js"></script>	
+	<script src="js/images-loded.min.js"></script>	
+    <script src="js/custom.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+</body>
+</html>
