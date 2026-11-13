@@ -1,0 +1,590 @@
+@media (min-width: 900px) {
+  .page-modal:has(#annual-checkup-steps) .page-modal-panel {
+    width: min(1560px, calc(100vw - 32px));
+    height: calc(100vh - 32px);
+    max-height: none;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    overflow: hidden;
+  }
+
+  .page-modal:has(#annual-checkup-steps) .page-modal-panel > main {
+    height: calc(100% - 43px);
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows:
+      clamp(130px, 17vh, 155px)
+      48px
+      minmax(0, 1fr)
+      clamp(130px, 16vh, 150px)
+      clamp(66px, 9vh, 82px);
+    gap: 7px;
+    padding: 8px 22px 3px;
+    overflow: hidden;
+  }
+
+  .page-modal:has(#annual-checkup-steps) .page-modal-panel > main > .hero {
+    grid-column: 1;
+    grid-row: 1;
+    min-height: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .page-modal:has(#annual-checkup-steps) .page-modal-panel > main > .proof {
+    grid-column: 1;
+    grid-row: 2;
+    min-height: 0;
+  }
+
+  .page-modal:has(#annual-checkup-steps) .page-modal-panel > main > .services {
+    grid-column: 1;
+    grid-row: 3;
+    min-height: 0;
+    padding: 10px 14px;
+    overflow: hidden;
+  }
+
+  .page-modal:has(#annual-checkup-steps) .page-modal-panel > main > .services > .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page-modal:has(#annual-checkup-steps) .page-modal-panel > main > .services .section-head {
+    flex: 0 0 auto;
+    max-width: none;
+    margin: 0 0 8px;
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    text-align: left;
+  }
+
+  .page-modal:has(#annual-checkup-steps) .page-modal-panel > main > .services .section-head h2 {
+    margin: 0;
+    font-size: 30px;
+  }
+
+  .page-modal:has(#annual-checkup-steps) .page-modal-panel > main > .services .section-head p {
+    margin-left: auto;
+    font-size: 20px;
+  }
+
+  .page-modal:has(#annual-checkup-steps) .page-modal-panel > main > .services .service-grid {
+    flex: 1 1 auto;
+    min-height: 0;
+    height: auto;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .page-modal:has(#annual-checkup-steps) .page-modal-panel > main > .services .service-card {
+    min-height: 0;
+    padding: 10px;
+  }
+
+  .page-modal:has(#annual-checkup-steps) .page-modal-panel > main > .services .quality-note {
+    flex: 0 0 auto;
+    margin-top: 7px;
+    padding: 7px 10px;
+    font-size: 10px;
+  }
+
+  .page-modal:has(#annual-checkup-steps) .page-modal-panel > main > .process {
+    grid-column: 1;
+    grid-row: 4;
+    min-height: 0;
+    padding: 8px 12px;
+    overflow: hidden;
+  }
+
+  .page-modal:has(#annual-checkup-steps) .page-modal-panel > main > .process .section-head {
+    margin: 0 0 6px;
+    text-align: left;
+  }
+
+  .page-modal:has(#annual-checkup-steps) .page-modal-panel > main > .process .section-head h2 {
+    margin: 2px 0;
+    font-size: 16px;
+  }
+
+  .page-modal:has(#annual-checkup-steps) .page-modal-panel > main > .process .process-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .page-modal:has(#annual-checkup-steps) .page-modal-panel > main > .process .step {
+    min-width: 0;
+    height: 100%;
+    padding: 9px 10px;
+    overflow: hidden;
+  }
+
+  .page-modal:has(#annual-checkup-steps) .page-modal-panel > main > .contact {
+    grid-column: 1;
+    grid-row: 5;
+    min-height: 0;
+    padding: 8px 14px;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 899px) {
+  .page-modal:has(#annual-checkup-steps) .page-modal-panel > main {
+    display: block;
+    height: auto;
+    overflow: visible;
+  }
+
+  .page-modal:has(#annual-checkup-steps) .page-modal-panel > main > .services .service-grid {
+    height: auto;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: auto;
+  }
+}
+
+.sarabun-thin {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.sarabun-extralight {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.sarabun-light {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.sarabun-regular {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sarabun-medium {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.sarabun-semibold {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.sarabun-bold {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.sarabun-extrabold {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.sarabun-thin-italic {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.sarabun-extralight-italic {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.sarabun-light-italic {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.sarabun-regular-italic {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.sarabun-medium-italic {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.sarabun-semibold-italic {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.sarabun-bold-italic {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.sarabun-extrabold-italic {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+ #modal3 {
+    position: fixed;
+    inset: 0;
+    z-index: 1100;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    background: rgba(9, 35, 34, .72);
+    backdrop-filter: blur(6px);
+  }
+
+  #modal3 .xray-panel {
+    width: min(1100px, 100%);
+    max-height: calc(100vh - 32px);
+    overflow: auto;
+    padding: 28px;
+    border-radius: 20px;
+    background: #fff;
+    color: #173b3b;
+    box-shadow: 0 28px 90px #061e1c66;
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+  }
+
+  #modal3 .xray-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #dce9e5;
+  }
+
+  #modal3 .xray-kicker {
+    color: #087f78;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .12em;
+  }
+
+  #modal3 .xray-title {
+    margin: 7px 0 8px;
+    font-size: clamp(27px, 3.2vw, 39px);
+    line-height: 1.22;
+  }
+
+  #modal3 .xray-intro {
+    max-width: 660px;
+    margin: 0;
+    color: #617675;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  #modal3 .xray-close {
+    flex: 0 0 auto;
+    width: 38px;
+    height: 38px;
+    border: 1px solid #dce9e5;
+    border-radius: 50%;
+    background: #fff;
+    color: #173b3b;
+    font-size: 23px;
+    cursor: pointer;
+  }
+
+  #modal3 .xray-hero {
+    display: grid;
+    grid-template-columns: 1fr .9fr;
+    gap: 24px;
+    align-items: center;
+    padding: 22px 0;
+  }
+
+  #modal3 .xray-image {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    background: #e8f5f1;
+  }
+
+  #modal3 .xray-points {
+    display: grid;
+    gap: 10px;
+  }
+
+  #modal3 .xray-point {
+    display: grid;
+    grid-template-columns: 38px 1fr;
+    gap: 11px;
+    align-items: start;
+    padding: 12px;
+    border: 1px solid #dce9e5;
+    border-radius: 12px;
+    background: #fbfdfc;
+  }
+
+  #modal3 .xray-icon {
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    background: #e8f5f1;
+    color: #087f78;
+    font-weight: 700;
+  }
+
+  #modal3 .xray-point h3 {
+    margin: 0 0 3px;
+    font-size: 14px;
+  }
+
+  #modal3 .xray-point p {
+    margin: 0;
+    color: #617675;
+    font-size: 12px;
+    line-height: 1.55;
+  }
+
+  #modal3 .xray-section-title {
+    margin: 5px 0 12px;
+    font-size: 20px;
+  }
+
+  #modal3 .xray-audience {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 22px;
+  }
+
+  #modal3 .xray-audience article {
+    padding: 15px;
+    border: 1px solid #dce9e5;
+    border-radius: 12px;
+  }
+
+  #modal3 .xray-audience b {
+    display: block;
+    margin-bottom: 4px;
+    color: #075b59;
+    font-size: 14px;
+  }
+
+  #modal3 .xray-audience p {
+    margin: 0;
+    color: #617675;
+    font-size: 12px;
+    line-height: 1.55;
+  }
+
+  #modal3 .xray-steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+
+  #modal3 .xray-step {
+    padding: 14px;
+    border-left: 3px solid #087f78;
+    border-radius: 4px 11px 11px 4px;
+    background: #f4f9f6;
+  }
+
+  #modal3 .xray-step span {
+    color: #087f78;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .1em;
+  }
+
+  #modal3 .xray-step h3 {
+    margin: 4px 0;
+    font-size: 14px;
+  }
+
+  #modal3 .xray-step p {
+    margin: 0;
+    color: #617675;
+    font-size: 12px;
+    line-height: 1.55;
+  }
+
+  #modal3 .xray-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+    margin-top: 20px;
+    padding: 17px 20px;
+    border-radius: 13px;
+    background: #075b59;
+    color: #fff;
+  }
+
+  #modal3 .xray-contact p {
+    margin: 3px 0 0;
+    color: #d5e9e2;
+    font-size: 12px;
+  }
+
+  #modal3 .xray-call {
+    flex: 0 0 auto;
+    padding: 10px 16px;
+    border-radius: 99px;
+    background: #fff;
+    color: #075b59;
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  @media (max-width: 700px) {
+    #modal3 { padding: 0; }
+    #modal3 .xray-panel {
+      width: 100%;
+      height: 100%;
+      max-height: 100vh;
+      padding: 20px 16px;
+      border-radius: 0;
+    }
+    #modal3 .xray-hero { grid-template-columns: 1fr; }
+    #modal3 .xray-image { height: 210px; }
+    #modal3 .xray-audience,
+    #modal3 .xray-steps { grid-template-columns: 1fr; }
+    #modal3 .xray-contact {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  }
+
+  @media (min-width: 701px) {
+  #modal3 .xray-panel {
+    width: min(1100px, calc(100vw - 40px));
+    height: min(820px, calc(100vh - 40px));
+    max-height: calc(100vh - 40px);
+    display: grid;
+    grid-template-rows: auto minmax(165px, 1fr) auto auto auto auto auto;
+    gap: 8px;
+    padding: 18px 24px;
+    overflow: hidden;
+  }
+
+  #modal3 .xray-top {
+    padding-bottom: 10px;
+  }
+
+  #modal3 .xray-title {
+    font-size: clamp(24px, 2.4vw, 30px);
+    line-height: 1.2;
+    margin: 5px 0;
+  }
+
+  #modal3 .xray-intro {
+    font-size: 12px;
+    line-height: 1.45;
+  }
+
+  #modal3 .xray-hero {
+    min-height: 0;
+    grid-template-columns: 1fr .9fr;
+    gap: 16px;
+    padding: 0;
+  }
+
+  #modal3 .xray-points {
+    gap: 6px;
+  }
+
+  #modal3 .xray-point {
+    min-height: 0;
+    padding: 7px 9px;
+    grid-template-columns: 30px 1fr;
+    gap: 8px;
+  }
+
+  #modal3 .xray-icon {
+    width: 28px;
+    height: 28px;
+    font-size: 11px;
+  }
+
+  #modal3 .xray-point h3,
+  #modal3 .xray-audience b,
+  #modal3 .xray-step h3 {
+    font-size: 12px;
+    line-height: 1.3;
+  }
+
+  #modal3 .xray-point p,
+  #modal3 .xray-audience p,
+  #modal3 .xray-step p {
+    font-size: 10px;
+    line-height: 1.4;
+  }
+
+  #modal3 .xray-image {
+    height: 100%;
+    min-height: 0;
+  }
+
+  #modal3 .xray-section-title {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.3;
+  }
+
+  #modal3 .xray-audience,
+  #modal3 .xray-steps {
+    gap: 8px;
+    margin: 0;
+  }
+
+  #modal3 .xray-audience article,
+  #modal3 .xray-step {
+    min-height: 0;
+    padding: 9px 10px;
+  }
+
+  #modal3 .xray-contact {
+    min-height: 0;
+    margin: 0;
+    padding: 10px 14px;
+  }
+
+  #modal3 .xray-contact p {
+    font-size: 10px;
+    line-height: 1.4;
+  }
+
+  #modal3 .xray-call {
+    padding: 8px 13px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 700px) {
+  #modal3 .xray-panel {
+    height: 100%;
+    max-height: 100vh;
+    overflow-y: auto;
+  }
+}
+
