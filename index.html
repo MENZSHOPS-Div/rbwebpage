@@ -1,164 +1,2249 @@
 <!DOCTYPE html>
 <html lang="en"><!-- Basic -->
+
 <head>
 	<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
-   
-    <!-- Mobile Metas -->
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
- 
-     <!-- Site Metas -->
-    <title>R&B Medical Laboratory</title>  
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="author" content="">
-	  
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
-    <!-- Site Icons -->
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Pogo Slider CSS -->
-    <link rel="stylesheet" href="css/pogo-slider.min.css">
+	<!-- Mobile Metas -->
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<!-- Site Metas -->
+	<title>R&B Medical Laboratory</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&family=Playpen+Sans+Thai:wght@100..
+800&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,
+800&display=swap" rel="stylesheet">
+	<!-- Site Icons -->
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Pogo Slider CSS -->
+	<link rel="stylesheet" href="css/pogo-slider.min.css">
 	<!-- Site CSS -->
-    <link rel="stylesheet" href="css/style.css">    
-    <!-- Responsive CSS -->
-    <link rel="stylesheet" href="css/responsive.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/modal2style.css">
+	<!-- Responsive CSS -->
 
-    <!--[if lt IE 9]>
+	<link rel="stylesheet" href="css/responsive.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/custom.css">
+
+	<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
 </head>
- <style>
-    
-    .modal {
-	  margin-top: 150px;
-	  margin-left: 600px;
-      width: 700px;
-      height: 500px;
-      display: flex;
-      overflow: hidden;
-      background: #fff;
-      border-radius: 14px;
-      box-shadow: 0 12px 36px rgb(0 0 0 / 15%);
-    }
+<style>
+	:root {
+		--ink: #173b3b;
+		--muted: #617675;
+		--teal: #087f78;
+		--deep: #075b59;
+		--mint: #e8f5f1;
+		--cream: #f7faf7;
+		--line: #dce9e5;
+		--white: #fff;
+		--gold: #d8a95c;
+		--shadow: 0 18px 55px #12433c12
+	}
 
-    .modal-image {
-      width: 42%;
-      height: 100%;
-      object-fit: cover;
-    }
+	* {
+		box-sizing: border-box
+	}
 
-    .modal-content {
-      flex: 1;
-      padding: 28px;
-      display: flex;
-      flex-direction: column;
-      
-    }
+	html {
+		scroll-behavior: smooth;
+		scroll-padding-top: 88px
+	}
 
-    .modal-content h2 {
-      margin: 0 0 12px;
-      color: #222;
-    }
+	body {
+		margin: 0;
+		font-family: 'IBM Plex Sans Thai', sans-serif;
+		color: var(--ink);
+		background: #fff;
+		line-height: 1.75
+	}
 
-    .modal-content p {
-      margin: 0;
-      line-height: 1.6;
-      color: #666;
-    }
+	a {
+		color: inherit;
+		text-decoration: none
+	}
+
+	.container {
+		width: min(1160px, calc(100% - 44px));
+		margin: auto
+	}
+
+	.topline {
+		background: var(--deep);
+		color: #e7f5ef;
+		font-size: 12px;
+		padding: 7px 0
+	}
+
+	.topline .container {
+		display: flex;
+		justify-content: space-between;
+		gap: 18px
+	}
+
+	.topline span {
+		opacity: .9
+	}
+
+	header {
+		position: sticky;
+		top: 0;
+		z-index: 10;
+		background: #ffffffed;
+		backdrop-filter: blur(12px);
+		border-bottom: 1px solid #e6efeb
+	}
+
+	.nav {
+		height: 78px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between
+	}
+
+	.brand {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 1.3
+	}
+
+	.brand img {
+		width: 48px;
+		height: 48px;
+		object-fit: contain
+	}
+
+	.brand small {
+		display: block;
+		font-size: 10px;
+		font-weight: 500;
+		letter-spacing: .13em;
+		color: var(--muted);
+		margin-top: 4px
+	}
+
+	.links {
+		display: flex;
+		align-items: center;
+		gap: 28px;
+		font-size: 14px;
+		font-weight: 500
+	}
+
+	.links a:not(.nav-cta):hover {
+		color: var(--teal)
+	}
+
+	.nav-cta,
+	.button {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		gap: 8px;
+		border-radius: 999px;
+		padding: 11px 20px;
+		background: var(--teal);
+		color: white;
+		font-size: 14px;
+		font-weight: 600;
+		transition: .2s
+	}
+
+	.nav-cta:hover,
+	.button:hover {
+		background: var(--deep);
+		transform: translateY(-1px)
+	}
+
+	.menu {
+		display: none;
+		border: 0;
+		background: none;
+		color: var(--ink);
+		font-size: 26px
+	}
+
+	.hero {
+		background: radial-gradient(ellipse at 78% 16%, #dcefe6 0, transparent 36%), linear-gradient(115deg, #f5faf7, #f0f8f5 52%, #e7f2ed);
+		overflow: hidden
+	}
+
+	.hero-grid {
+		display: grid;
+		grid-template-columns: 1.03fr .97fr;
+		align-items: center;
+		gap: 64px;
+		padding: 76px 0 82px
+	}
+
+	.eyebrow {
+		display: inline-flex;
+		align-items: center;
+		gap: 9px;
+		color: var(--teal);
+		font-size: 13px;
+		font-weight: 600;
+		letter-spacing: .02em
+	}
+
+	.eyebrow:before {
+		content: '';
+		width: 24px;
+		height: 1px;
+		background: var(--gold)
+	}
+
+	h1,
+	h2,
+	h3,
+	p {
+		margin-top: 0
+	}
+
+	h1 {
+		font-size: clamp(38px, 5vw, 60px);
+		line-height: 1.2;
+		letter-spacing: -.035em;
+		margin: 17px 0 20px;
+		font-weight: 600
+	}
+
+	.hero p {
+		font-size: 17px;
+		color: #5b7370;
+		max-width: 580px;
+		margin-bottom: 28px
+	}
+
+	.hero-actions {
+		display: flex;
+		gap: 12px;
+		align-items: center;
+		flex-wrap: wrap
+	}
+
+	.button.secondary {
+		background: #fff;
+		color: var(--deep);
+		border: 1px solid #cfe0da
+	}
+
+	.button.secondary:hover {
+		background: var(--mint)
+	}
+
+	.hero-note {
+		margin-top: 24px;
+		font-size: 12px;
+		color: #748985;
+		display: flex;
+		align-items: center;
+		gap: 9px
+	}
+
+	.hero-note:before {
+		content: '✓';
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		display: grid;
+		place-items: center;
+		background: #dcefe7;
+		color: var(--deep);
+		font-weight: 700
+	}
+
+	.image-frame {
+		position: relative;
+		padding: 0 0 24px 24px
+	}
+
+	.image-frame:before {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 72%;
+		height: 72%;
+		border-radius: 28px;
+		background: #cfe7dc
+	}
+
+	.image-frame img {
+		position: relative;
+		display: block;
+		width: 100%;
+		height: 440px;
+		object-fit: cover;
+		border-radius: 22px;
+		background: linear-gradient(145deg, #dcebe4, #f2f7f3);
+		box-shadow: var(--shadow)
+	}
+
+	.image-frame .image-label {
+		position: absolute;
+		right: -12px;
+		bottom: 42px;
+		background: #fff;
+		border: 1px solid var(--line);
+		border-radius: 14px;
+		padding: 12px 17px;
+		box-shadow: var(--shadow);
+		font-size: 12px;
+		color: var(--muted)
+	}
+
+	.image-label strong {
+		display: block;
+		color: var(--ink);
+		font-size: 14px
+	}
+
+	.proof {
+		border-bottom: 1px solid var(--line);
+		background: #fff
+	}
+
+	.proof-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		padding: 23px 0
+	}
+
+	.proof-item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 14px;
+		padding: 4px 20px;
+		border-right: 1px solid var(--line)
+	}
+
+	.proof-item:last-child {
+		border: 0
+	}
+
+	.proof-icon {
+		width: 42px;
+		height: 42px;
+		border-radius: 50%;
+		display: grid;
+		place-items: center;
+		background: var(--mint);
+		color: var(--teal);
+		font-size: 19px
+	}
+
+	.proof-item b {
+		display: block;
+		font-size: 14px
+	}
+
+	.proof-item span {
+		display: block;
+		font-size: 11px;
+		color: var(--muted)
+	}
+
+	section {
+		padding: 88px 0
+	}
+
+	.section-head {
+		max-width: 690px;
+		margin: 0 auto 42px;
+		text-align: center
+	}
+
+	.section-head h2 {
+		font-size: clamp(28px, 3.5vw, 40px);
+		line-height: 1.3;
+		margin: 12px 0;
+		color: var(--ink)
+	}
+
+	.section-head p {
+		color: var(--muted);
+		margin: 0
+	}
+
+	.about {
+		background: var(--cream)
+	}
+
+	.about-grid {
+		display: grid;
+		grid-template-columns: .9fr 1.1fr;
+		gap: 74px;
+		align-items: center
+	}
+
+	.about-photo img {
+		display: block;
+		width: 100%;
+		height: 400px;
+		object-fit: cover;
+		border-radius: 20px;
+		background: linear-gradient(145deg, #dcebe4, #f2f7f3)
+	}
+
+	.about-copy h2 {
+		font-size: 36px;
+		line-height: 1.3;
+		margin: 12px 0 18px
+	}
+
+	.about-copy>p {
+		color: var(--muted)
+	}
+
+	.standards {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 12px;
+		margin-top: 27px
+	}
+
+	.standard {
+		padding: 15px 16px;
+		border: 1px solid var(--line);
+		background: white;
+		border-radius: 12px
+	}
+
+	.standard b {
+		display: block;
+		color: var(--deep);
+		font-size: 16px
+	}
+
+	.standard span {
+		font-size: 12px;
+		color: var(--muted)
+	}
+
+	.quality-note {
+		margin-top: 17px;
+		padding: 14px 16px;
+		background: #e9f4ef;
+		border-left: 3px solid var(--teal);
+		font-size: 12px;
+		color: #54716b;
+		border-radius: 0 8px 8px 0
+	}
+
+	.services {
+		background: #fff
+	}
+
+	.service-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 16px
+	}
+
+	.service-card {
+		position: relative;
+		padding: 23px 22px 24px;
+		border: 1px solid var(--line);
+		border-radius: 15px;
+		background: white;
+		transition: .2s;
+		min-height: 188px
+	}
+
+	.service-card:hover {
+		transform: translateY(-3px);
+		box-shadow: var(--shadow);
+		border-color: #b4d5ca
+	}
+
+	.service-number {
+		font-size: 11px;
+		color: #94b5aa;
+		letter-spacing: .12em
+	}
+
+	.service-card h3 {
+		font-size: 17px;
+		margin: 10px 0 5px;
+		line-height: 1.5
+	}
+
+	.service-card h3 span {
+		display: block;
+		color: var(--teal);
+		font-size: 11px;
+		font-weight: 500
+	}
+
+	.service-card p {
+		font-size: 13px;
+		line-height: 1.75;
+		color: var(--muted);
+		margin: 0
+	}
+
+	.callout {
+		margin-top: 35px;
+		border-radius: 16px;
+		padding: 25px 30px;
+		background: var(--deep);
+		color: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 20px
+	}
+
+	.callout p {
+		margin: 3px 0 0;
+		color: #d4e8e2;
+		font-size: 13px
+	}
+
+	.callout h3 {
+		margin: 0;
+		font-size: 19px
+	}
+
+	.callout .button {
+		background: #fff;
+		color: var(--deep);
+		white-space: nowrap
+	}
+
+	.callout .button:hover {
+		background: #e8f5f1
+	}
+
+	.process {
+		background: var(--cream)
+	}
+
+	.process-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 22px
+	}
+
+	.step {
+		padding: 8px 18px 10px;
+		border-left: 1px solid #bdd8ce
+	}
+
+	.step-no {
+		font-size: 12px;
+		color: var(--teal);
+		font-weight: 700;
+		letter-spacing: .12em
+	}
+
+	.step h3 {
+		margin: 8px 0 4px;
+		font-size: 17px
+	}
+
+	.step p {
+		font-size: 13px;
+		color: var(--muted);
+		margin: 0
+	}
+
+	.contact {
+		padding: 72px 0;
+		background: #eaf5f0
+	}
+
+	.contact-inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 30px
+	}
+
+	.contact h2 {
+		font-size: 32px;
+		line-height: 1.35;
+		margin: 10px 0
+	}
+
+	.contact p {
+		color: var(--muted);
+		margin: 0
+	}
+
+	.contact .button {
+		white-space: nowrap
+	}
+
+	footer {
+		padding: 30px 0;
+		background: #123f3d;
+		color: #d7e9e3;
+		font-size: 12px
+	}
+
+	.footer-row {
+		display: flex;
+		justify-content: space-between;
+		gap: 24px;
+		align-items: center
+	}
+
+	.footer-brand {
+		font-weight: 600;
+		font-size: 14px
+	}
+
+	.footer-row p {
+		margin: 3px 0 0;
+		color: #a9c7bd;
+		font-size: 11px
+	}
+
+	.hero {
+		position: relative
+	}
+
+	.hero:after {
+		content: "";
+		position: absolute;
+		right: -130px;
+		top: -190px;
+		width: 360px;
+		height: 360px;
+		border: 1px solid #087f7814;
+		border-radius: 50%;
+		pointer-events: none
+	}
+
+	.hero-grid {
+		position: relative;
+		z-index: 1
+	}
+
+	.hero-facts {
+		display: flex;
+		align-items: center;
+		gap: 18px;
+		margin-top: 27px;
+		padding-top: 20px;
+		border-top: 1px solid #d7e7df;
+		max-width: 455px
+	}
+
+	.hero-facts div {
+		display: flex;
+		flex-direction: column
+	}
+
+	.hero-facts strong {
+		font-size: 20px;
+		line-height: 1.15;
+		color: var(--deep)
+	}
+
+	.hero-facts span {
+		font-size: 11px;
+		color: var(--muted);
+		margin-top: 3px
+	}
+
+	.hero-facts i {
+		height: 30px;
+		border-left: 1px solid #cbded5
+	}
+
+	.image-frame img,
+	.about-photo img {
+		border: 5px solid #ffffffd9
+	}
+
+	.image-frame:after {
+		content: 'MEDICAL LABORATORY';
+		position: absolute;
+		left: 45px;
+		top: 18px;
+		border-radius: 99px;
+		padding: 6px 12px;
+		background: #ffffffed;
+		color: var(--deep);
+		font-size: 10px;
+		font-weight: 700;
+		letter-spacing: .12em
+	}
+
+	.proof {
+		box-shadow: 0 8px 24px #12433c08
+	}
+
+	.proof-icon {
+		font-weight: 700
+	}
+
+	.service-card {
+		box-shadow: 0 5px 18px #12433c06
+	}
+
+	.service-card:after {
+		content: '↗';
+		position: absolute;
+		right: 18px;
+		top: 17px;
+		color: #99b9ad;
+		font-size: 15px
+	}
+
+	.service-number {
+		display: inline-flex;
+		padding: 4px 9px;
+		border-radius: 99px;
+		background: #eff7f3;
+		color: #558d7d;
+		font-size: 10px;
+		font-weight: 700
+	}
+
+	.service-card h3 {
+		padding-right: 14px
+	}
+
+	.callout {
+		box-shadow: 0 14px 30px #075b5922
+	}
+
+	.process {
+		background: linear-gradient(180deg, #f7faf7, #eef6f2)
+	}
+
+	.step {
+		position: relative;
+		padding: 17px 20px 18px;
+		background: #fff;
+		border: 1px solid var(--line);
+		border-left: 3px solid var(--teal);
+		border-radius: 4px 13px 13px 4px;
+		box-shadow: 0 8px 22px #12433c08
+	}
+
+	.contact {
+		position: relative;
+		overflow: hidden
+	}
+
+	.contact:after {
+		content: '+';
+		position: absolute;
+		right: 8%;
+		top: -30px;
+		font-size: 220px;
+		line-height: 1;
+		color: #087f7809;
+		font-weight: 300;
+		pointer-events: none
+	}
+
+	.contact-inner {
+		position: relative;
+		z-index: 1
+	}
+
+	.contact .button {
+		box-shadow: 0 9px 24px #075b5924
+	}
+
+	.footer-brand {
+		letter-spacing: .025em
+	}
+
+	@media(max-width:850px) {
+		.links {
+			gap: 15px
+		}
+
+		.hero-grid {
+			gap: 35px;
+			padding: 58px 0
+		}
+
+		.image-frame img {
+			height: 370px
+		}
+
+		.about-grid {
+			gap: 40px
+		}
+
+		.service-grid {
+			grid-template-columns: repeat(2, 1fr)
+		}
+	}
+
+	@media(max-width:650px) {
+		.container {
+			width: min(100% - 32px, 520px)
+		}
+
+		.topline .container {
+			justify-content: center
+		}
+
+		.topline span:last-child {
+			display: none
+		}
+
+		.nav {
+			height: 68px
+		}
+
+		.brand img {
+			width: 42px;
+			height: 42px
+		}
+
+		.menu {
+			display: block
+		}
+
+		.links {
+			display: none;
+			position: absolute;
+			top: 68px;
+			left: 0;
+			right: 0;
+			padding: 18px 22px 22px;
+			background: #fff;
+			border-bottom: 1px solid var(--line);
+			box-shadow: var(--shadow);
+			flex-direction: column;
+			align-items: stretch;
+			gap: 10px
+		}
+
+		.links.open {
+			display: flex
+		}
+
+		.links a {
+			padding: 7px 0
+		}
+
+		.links .nav-cta {
+			text-align: center;
+			margin-top: 4px
+		}
+
+		.hero-grid {
+			grid-template-columns: 1fr;
+			gap: 34px;
+			padding: 53px 0 55px
+		}
+
+		.hero-facts {
+			gap: 12px
+		}
+
+		.hero-facts strong {
+			font-size: 18px
+		}
+
+		.hero p {
+			font-size: 15px
+		}
+
+		.image-frame {
+			max-width: 500px;
+			margin: 0 auto;
+			width: 100%
+		}
+
+		.image-frame img {
+			height: 310px
+		}
+
+		.image-frame .image-label {
+			right: -4px;
+			bottom: 37px
+		}
+
+		.proof-grid {
+			grid-template-columns: 1fr;
+			padding: 8px 0
+		}
+
+		.proof-item {
+			justify-content: flex-start;
+			border-right: 0;
+			border-bottom: 1px solid var(--line);
+			padding: 13px 8px
+		}
+
+		.proof-item:last-child {
+			border: 0
+		}
+
+		.proof-icon {
+			width: 38px;
+			height: 38px
+		}
+
+		section {
+			padding: 65px 0
+		}
+
+		.section-head {
+			margin-bottom: 30px
+		}
+
+		.about-grid {
+			grid-template-columns: 1fr;
+			gap: 28px
+		}
+
+		.about-photo img {
+			height: 280px
+		}
+
+		.about-copy h2 {
+			font-size: 29px
+		}
+
+		.standards {
+			gap: 9px
+		}
+
+		.standard {
+			padding: 12px
+		}
+
+		.service-grid {
+			grid-template-columns: 1fr
+		}
+
+		.service-card {
+			min-height: 0
+		}
+
+		.callout {
+			padding: 23px;
+			align-items: flex-start;
+			flex-direction: column
+		}
+
+		.process-grid {
+			grid-template-columns: 1fr;
+			gap: 22px
+		}
+
+		.contact-inner {
+			align-items: flex-start;
+			flex-direction: column
+		}
+
+		.contact h2 {
+			font-size: 27px
+		}
+
+		.footer-row {
+			align-items: flex-start;
+			flex-direction: column;
+			gap: 12px
+		}
+	}
+
+	@media(prefers-reduced-motion:reduce) {
+		html {
+			scroll-behavior: auto
+		}
+
+		*,
+		*:before,
+		*:after {
+			transition: none !important
+		}
+	}
+
+	.page-modal {
+		position: fixed;
+		inset: 0;
+		z-index: 1000;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 20px;
+		background: rgba(9, 35, 34, .68);
+		backdrop-filter: blur(5px);
+		font-family: sarabun;
+	}
+
+	.page-modal[hidden] {
+		display: none
+	}
+
+	.page-modal-panel {
+		position: relative;
+		width: min(1440px, 100%);
+		max-height: calc(100vh - 40px);
+		overflow: auto;
+		background: #fff;
+		border-radius: 20px;
+		box-shadow: 0 28px 90px #061e1c66;
+		overscroll-behavior: contain
+	}
+
 	.modal-close {
-    position: absolute;
-    top: 10px;
-    right: 12px;
-    border: 0;
-    background: transparent;
-    color: #555;
-    font-size: 26px;
-    line-height: 1;
-    cursor: pointer;
-  }
+		position: sticky;
+		top: 12px;
+		float: right;
+		z-index: 30;
+		margin: 12px 12px -54px 0;
+		width: 42px;
+		height: 42px;
+		border: 1px solid #dce9e5;
+		border-radius: 50%;
+		background: #fff;
+		color: #173b3b;
+		font-size: 25px;
+		line-height: 1;
+		cursor: pointer;
+		box-shadow: 0 5px 18px #123f3d20
+	}
 
-  .modal-close:hover {
-    color: #111;
-  }
+	.modal-reopen {
+		position: fixed;
+		right: 20px;
+		bottom: 20px;
+		z-index: 999;
+		border: 0;
+		border-radius: 999px;
+		padding: 12px 19px;
+		background: #087f78;
+		color: #fff;
+		font: 600 14px 'IBM Plex Sans Thai', sans-serif;
+		box-shadow: 0 8px 24px #123f3d35;
+		cursor: pointer
+	}
 
-  .description{
-	text-align: start;
-  }
-    @media (max-width: 540px) {
-      .modal {
-        width: calc(100% - 32px);
-      }
-    }
-  </style>
+	body.modal-open {
+		overflow: hidden
+	}
+
+	@media(max-width:650px) {
+		.page-modal {
+			padding: 0
+		}
+
+		.page-modal-panel {
+			width: 100%;
+			height: 100%;
+			max-height: 100vh;
+			border-radius: 0
+		}
+
+		.modal-close {
+			top: 8px;
+			margin: 8px 8px -50px 0
+		}
+
+		.modal-reopen {
+			right: 14px;
+			bottom: 14px
+		}
+	}
+
+	/* Compact spacing for a balanced, less airy layout */
+	.page-modal-panel {
+		width: min(1320px, 100%)
+	}
+
+	.hero-grid {
+		gap: 44px;
+		padding: 54px 0 58px
+	}
+
+	section {
+		padding: 62px 0
+	}
+
+	.section-head {
+		margin-bottom: 30px
+	}
+
+	.about-grid {
+		gap: 48px
+	}
+
+	.about-photo img {
+		height: 350px
+	}
+
+	.image-frame img {
+		height: 390px
+	}
+
+	.proof-grid {
+		padding: 16px 0
+	}
+
+	.service-grid {
+		gap: 12px
+	}
+
+	.service-card {
+		padding: 18px 18px 19px;
+		min-height: 164px
+	}
+
+	.callout {
+		margin-top: 25px;
+		padding: 21px 26px
+	}
+
+	.process-grid {
+		gap: 16px
+	}
+
+	.contact {
+		padding: 52px 0
+	}
+
+	footer {
+		padding: 23px 0
+	}
+
+	.hero-actions {
+		gap: 9px
+	}
+
+	.hero-note {
+		margin-top: 18px
+	}
+
+	.hero-facts {
+		margin-top: 20px;
+		padding-top: 16px
+	}
+
+	@media(max-width:850px) {
+		.hero-grid {
+			gap: 30px;
+			padding: 44px 0
+		}
+
+		.image-frame img {
+			height: 330px
+		}
+
+		.about-grid {
+			gap: 30px
+		}
+	}
+
+	@media(max-width:650px) {
+		section {
+			padding: 48px 0
+		}
+
+		.hero-grid {
+			gap: 24px;
+			padding: 40px 0 44px
+		}
+
+		.image-frame img {
+			height: 285px
+		}
+
+		.about-photo img {
+			height: 245px
+		}
+
+		.section-head {
+			margin-bottom: 24px
+		}
+
+		.service-grid {
+			gap: 10px
+		}
+
+		.service-card {
+			padding: 17px;
+			min-height: 0
+		}
+
+		.proof-grid {
+			padding: 6px 0
+		}
+
+		.proof-item {
+			padding: 10px 8px
+		}
+
+		.callout {
+			margin-top: 20px;
+			padding: 19px
+		}
+
+		.process-grid {
+			gap: 13px
+		}
+
+		.contact {
+			padding: 42px 0
+		}
+
+		.hero-facts {
+			gap: 10px
+		}
+	}
+
+	.annual-trigger {
+		background: #fff;
+		color: var(--deep);
+		border: 1px solid #cfe0da;
+		cursor: pointer
+	}
+
+	.callout-actions {
+		display: flex;
+		gap: 10px;
+		align-items: center;
+		flex-wrap: wrap
+	}
+
+	.annual-modal {
+		position: fixed;
+		inset: 0;
+		z-index: 1200;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 20px;
+		background: rgba(7, 35, 34, .76);
+		backdrop-filter: blur(7px)
+	}
+
+	.annual-modal[hidden] {
+		display: none
+	}
+
+	.annual-panel {
+		position: relative;
+		width: min(1050px, 100%);
+		max-height: calc(100vh - 40px);
+		overflow: auto;
+		background: #fff;
+		border-radius: 22px;
+		box-shadow: 0 32px 100px #061e1c70
+	}
+
+	.annual-close {
+		position: sticky;
+		top: 14px;
+		float: right;
+		z-index: 4;
+		margin: 14px 14px -52px 0;
+		width: 40px;
+		height: 40px;
+		border: 1px solid var(--line);
+		border-radius: 50%;
+		background: #fff;
+		color: var(--ink);
+		font-size: 24px;
+		cursor: pointer;
+		box-shadow: 0 5px 18px #123f3d20
+	}
+
+	.annual-hero {
+		position: relative;
+		overflow: hidden;
+		padding: 38px 42px 34px;
+		background: linear-gradient(120deg, #eaf5f0, #f5faf7 58%, #e0efe8)
+	}
+
+	.annual-hero:after {
+		content: '+';
+		position: absolute;
+		right: 6%;
+		top: -75px;
+		font-size: 250px;
+		line-height: 1;
+		color: #087f780d;
+		font-weight: 300
+	}
+
+	.annual-hero-inner {
+		position: relative;
+		z-index: 1;
+		display: grid;
+		grid-template-columns: 1.2fr .8fr;
+		align-items: center;
+		gap: 30px
+	}
+
+	.annual-hero h2 {
+		font-size: clamp(28px, 4vw, 42px);
+		line-height: 1.25;
+		margin: 12px 0;
+		color: var(--ink)
+	}
+
+	.annual-hero p {
+		max-width: 570px;
+		color: var(--muted);
+		margin: 0;
+		font-size: 14px
+	}
+
+	.annual-hero img {
+		width: 100%;
+		height: 210px;
+		object-fit: cover;
+		border-radius: 16px;
+		border: 5px solid #ffffffd9;
+		box-shadow: var(--shadow);
+		background: #e4efea
+	}
+
+	.annual-badges {
+		display: flex;
+		gap: 9px;
+		flex-wrap: wrap;
+		margin-top: 18px
+	}
+
+	.annual-badges span {
+		border: 1px solid #d4e5dc;
+		background: #ffffffb8;
+		border-radius: 99px;
+		padding: 5px 11px;
+		font-size: 11px;
+		color: var(--deep);
+		font-weight: 600
+	}
+
+	.annual-content {
+		padding: 30px 42px 38px
+	}
+
+	.annual-section-title {
+		display: flex;
+		align-items: end;
+		justify-content: space-between;
+		gap: 15px;
+		margin-bottom: 17px
+	}
+
+	.annual-section-title h3 {
+		font-size: 22px;
+		margin: 4px 0 0
+	}
+
+	.annual-section-title p {
+		font-size: 12px;
+		color: var(--muted);
+		margin: 0
+	}
+
+	.check-grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 11px
+	}
+
+	.check-item {
+		display: grid;
+		grid-template-columns: 38px 1fr;
+		gap: 12px;
+		align-items: start;
+		padding: 15px;
+		border: 1px solid var(--line);
+		border-radius: 13px;
+		background: #fff;
+		box-shadow: 0 4px 15px #12433c06
+	}
+
+	.check-icon {
+		width: 38px;
+		height: 38px;
+		border-radius: 11px;
+		background: var(--mint);
+		color: var(--teal);
+		display: grid;
+		place-items: center;
+		font-size: 17px;
+		font-weight: 700
+	}
+
+	.check-item h4 {
+		font-size: 14px;
+		line-height: 1.4;
+		margin: 0 0 3px
+	}
+
+	.check-item p {
+		font-size: 11px;
+		line-height: 1.6;
+		color: var(--muted);
+		margin: 0
+	}
+
+	.annual-note {
+		margin-top: 14px;
+		padding: 12px 14px;
+		border-left: 3px solid var(--gold);
+		background: #fbf7ee;
+		color: #6e6045;
+		font-size: 11px;
+		border-radius: 0 8px 8px 0
+	}
+
+	.annual-steps {
+		margin-top: 30px
+	}
+
+	.annual-steps-grid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 11px
+	}
+
+	.annual-step {
+		padding: 15px;
+		border-radius: 13px;
+		background: var(--cream);
+		border: 1px solid var(--line)
+	}
+
+	.annual-step span {
+		font-size: 10px;
+		font-weight: 700;
+		letter-spacing: .1em;
+		color: var(--teal)
+	}
+
+	.annual-step h4 {
+		font-size: 14px;
+		margin: 6px 0 4px
+	}
+
+	.annual-step p {
+		font-size: 11px;
+		line-height: 1.65;
+		color: var(--muted);
+		margin: 0
+	}
+
+	.annual-footer {
+		margin-top: 25px;
+		padding: 18px 20px;
+		background: var(--deep);
+		color: #fff;
+		border-radius: 14px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 18px
+	}
+
+	.annual-footer p {
+		color: #d5e9e2;
+		font-size: 12px;
+		margin: 3px 0 0
+	}
+
+	.annual-footer strong {
+		font-size: 16px
+	}
+
+	.annual-footer .button {
+		background: #fff;
+		color: var(--deep);
+		white-space: nowrap
+	}
+
+	@media(max-width:700px) {
+		.annual-modal {
+			padding: 0
+		}
+
+		.annual-panel {
+			height: 100%;
+			max-height: 100vh;
+			border-radius: 0
+		}
+
+		.annual-hero {
+			padding: 30px 22px 24px
+		}
+
+		.annual-hero-inner {
+			grid-template-columns: 1fr;
+			gap: 18px
+		}
+
+		.annual-hero img {
+			height: 180px
+		}
+
+		.annual-content {
+			padding: 24px 20px 28px
+		}
+
+		.check-grid {
+			grid-template-columns: 1fr
+		}
+
+		.annual-steps-grid {
+			grid-template-columns: repeat(2, 1fr)
+		}
+
+		.annual-section-title {
+			align-items: start;
+			flex-direction: column;
+			gap: 5px
+		}
+
+		.annual-footer {
+			align-items: flex-start;
+			flex-direction: column;
+			padding: 17px
+		}
+
+		.annual-close {
+			top: 9px;
+			margin: 9px 9px -49px 0
+		}
+	}
+
+	@media(max-width:390px) {
+		.annual-steps-grid {
+			grid-template-columns: 1fr
+		}
+	}
+
+	@media(min-width:900px) {
+		.page-modal {
+			padding: 12px
+		}
+
+		.page-modal-panel {
+			width: min(1560px, 100%);
+			height: calc(100vh - 24px);
+			max-height: none;
+			overflow: hidden;
+			border-radius: 18px
+		}
+
+		.page-modal-panel>.modal-close {
+			position: absolute;
+			top: 8px;
+			right: 10px;
+			float: none;
+			margin: 0;
+			width: 34px;
+			height: 34px;
+			font-size: 22px
+		}
+
+		.page-modal-panel>main {
+			height: calc(100% - 43px);
+			display: grid;
+			grid-template-columns: minmax(250px, .78fr) minmax(0, 2.22fr);
+			grid-template-rows: clamp(132px, 18vh, 158px) 48px minmax(0, 1fr) clamp(88px, 12vh, 102px);
+			gap: 6px 12px;
+			padding: 8px 22px 3px
+		}
+
+		.page-modal-panel>main>.hero {
+			grid-column: 1 / 3;
+			grid-row: 1;
+			min-height: 0;
+			border-radius: 14px
+		}
+
+		.page-modal-panel>main>.hero .hero-grid {
+			height: 100%;
+			grid-template-columns: 1.12fr .88fr;
+			gap: 22px;
+			padding: 10px 20px
+		}
+
+		.page-modal-panel>main>.hero h1 {
+			font-size: clamp(25px, 2.3vw, 34px);
+			line-height: 1.12;
+			margin: 5px 0 7px
+		}
+
+		.page-modal-panel>main>.hero .eyebrow {
+			font-size: 10px
+		}
+
+		.page-modal-panel>main>.hero p {
+			font-size: 11px;
+			line-height: 1.45;
+			margin: 0;
+			max-width: 650px
+		}
+
+		.page-modal-panel>main>.hero .hero-actions {
+			display: none
+		}
+
+		.page-modal-panel>main>.hero .hero-note {
+			font-size: 10px;
+			margin-top: 7px
+		}
+
+		.page-modal-panel>main>.hero .hero-facts {
+			display: none
+		}
+
+		.page-modal-panel>main>.hero .image-frame {
+			height: 100%;
+			padding: 0 0 7px 7px
+		}
+
+		.page-modal-panel>main>.hero .image-frame img {
+			height: 100%;
+			min-height: 0;
+			border-width: 3px;
+			border-radius: 13px
+		}
+
+		.page-modal-panel>main>.hero .image-frame:before {
+			border-radius: 14px
+		}
+
+		.page-modal-panel>main>.hero .image-label {
+			right: 4px;
+			bottom: 13px;
+			padding: 5px 9px;
+			font-size: 8px;
+			border-radius: 8px
+		}
+
+		.page-modal-panel>main>.hero .image-label strong {
+			font-size: 9px
+		}
+
+		.page-modal-panel>main>.proof {
+			grid-column: 1 / 3;
+			grid-row: 2;
+			border: 0;
+			border-radius: 10px;
+			background: #f5faf7
+		}
+
+		.page-modal-panel>main>.proof .proof-grid {
+			height: 100%;
+			padding: 4px 8px;
+			grid-template-columns: repeat(3, 1fr)
+		}
+
+		.page-modal-panel>main>.proof .proof-item {
+			justify-content: flex-start;
+			padding: 2px 14px;
+			gap: 9px
+		}
+
+		.page-modal-panel>main>.proof .proof-icon {
+			width: 31px;
+			height: 31px;
+			font-size: 15px
+		}
+
+		.page-modal-panel>main>.proof .proof-item b {
+			font-size: 11px
+		}
+
+		.page-modal-panel>main>.proof .proof-item span {
+			font-size: 9px
+		}
+
+		.page-modal-panel>main>.about {
+			grid-column: 1;
+			grid-row: 3;
+			min-height: 0;
+			overflow: hidden;
+			padding: 13px 14px;
+			border: 1px solid var(--line);
+			border-radius: 13px;
+			background: var(--cream)
+		}
+
+		.page-modal-panel>main>.about .about-grid {
+			display: block;
+			height: 100%
+		}
+
+		.page-modal-panel>main>.about .about-photo {
+			display: none
+		}
+
+		.page-modal-panel>main>.about .about-copy h2 {
+			font-size: 19px;
+			line-height: 1.25;
+			margin: 5px 0 8px
+		}
+
+		.page-modal-panel>main>.about .about-copy>p {
+			font-size: 10px;
+			line-height: 1.48;
+			margin: 0 0 6px
+		}
+
+		.page-modal-panel>main>.about .standards {
+			grid-template-columns: 1fr 1fr;
+			gap: 5px;
+			margin-top: 8px
+		}
+
+		.page-modal-panel>main>.about .standard {
+			padding: 6px 7px;
+			border-radius: 8px
+		}
+
+		.page-modal-panel>main>.about .standard b {
+			font-size: 10px
+		}
+
+		.page-modal-panel>main>.about .standard span {
+			font-size: 8px;
+			line-height: 1.3;
+			display: block
+		}
+
+		.page-modal-panel>main>.about .quality-note {
+			font-size: 8px;
+			line-height: 1.35;
+			padding: 6px 8px;
+			margin-top: 7px
+		}
+
+		.page-modal-panel>main>.services {
+			grid-column: 2;
+			grid-row: 3;
+			min-height: 0;
+			overflow: hidden;
+			padding: 10px 12px;
+			border: 1px solid var(--line);
+			border-radius: 13px
+		}
+
+		.page-modal-panel>main>.services .section-head {
+			max-width: none;
+			text-align: left;
+			margin: 0 0 7px;
+			display: flex;
+			align-items: baseline;
+			gap: 10px
+		}
+
+		.page-modal-panel>main>.services .section-head .eyebrow {
+			font-size: 9px;
+			white-space: nowrap
+		}
+
+		.page-modal-panel>main>.services .section-head h2 {
+			font-size: 18px;
+			margin: 0;
+			line-height: 1.2
+		}
+
+		.page-modal-panel>main>.services .section-head p {
+			font-size: 9px;
+			margin-left: auto;
+			text-align: right
+		}
+
+		.page-modal-panel>main>.services .service-grid {
+			height: calc(100% - 31px);
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+			grid-template-rows: repeat(4, minmax(0, 1fr));
+			gap: 6px
+		}
+
+		.page-modal-panel>main>.services .service-card {
+			min-height: 0;
+			padding: 7px 8px;
+			border-radius: 9px;
+			overflow: hidden
+		}
+
+		.page-modal-panel>main>.services .service-number {
+			font-size: 8px;
+			padding: 2px 6px;
+			letter-spacing: .04em
+		}
+
+		.page-modal-panel>main>.services .service-card:after {
+			right: 7px;
+			top: 5px;
+			font-size: 10px
+		}
+
+		.page-modal-panel>main>.services .service-card h3 {
+			font-size: 10px;
+			line-height: 1.28;
+			margin: 4px 0 2px;
+			padding-right: 9px
+		}
+
+		.page-modal-panel>main>.services .service-card h3 span {
+			font-size: 8px;
+			line-height: 1.25
+		}
+
+		.page-modal-panel>main>.services .service-card p {
+			font-size: 8px;
+			line-height: 1.35
+		}
+
+		.page-modal-panel>main>.services .service-grid {
+			height: calc(100% - 76px)
+		}
+
+		.page-modal-panel>main>.services .callout {
+			display: flex;
+			margin: 4px 0 0;
+			padding: 0;
+			background: transparent;
+			color: var(--ink);
+			box-shadow: none;
+			min-height: 30px
+		}
+
+		.page-modal-panel>main>.services .callout>div:first-child {
+			display: none
+		}
+
+		.page-modal-panel>main>.services .callout-actions {
+			width: 100%;
+			justify-content: flex-end;
+			gap: 6px
+		}
+
+		.page-modal-panel>main>.services .callout .button {
+			padding: 5px 10px;
+			font-size: 8px;
+			line-height: 1.2;
+			white-space: nowrap;
+			border-radius: 99px
+		}
+
+		.page-modal-panel>main>.services .callout .annual-trigger {
+			background: #fff;
+			color: var(--deep);
+			border: 1px solid #cfe0da
+		}
+
+		.page-modal-panel>main>.process {
+			grid-column: 1;
+			grid-row: 4;
+			min-height: 0;
+			overflow: hidden;
+			padding: 7px 10px;
+			border-radius: 11px;
+			background: #f1f7f4
+		}
+
+		.page-modal-panel>main>.process .section-head {
+			margin: 0 0 4px;
+			text-align: left
+		}
+
+		.page-modal-panel>main>.process .section-head .eyebrow {
+			font-size: 8px
+		}
+
+		.page-modal-panel>main>.process .section-head h2 {
+			font-size: 12px;
+			margin: 1px 0;
+			line-height: 1.2
+		}
+
+		.page-modal-panel>main>.process .section-head p {
+			display: none
+		}
+
+		.page-modal-panel>main>.process .process-grid {
+			grid-template-columns: repeat(3, 1fr);
+			gap: 4px
+		}
+
+		.page-modal-panel>main>.process .step {
+			padding: 5px 6px;
+			border-radius: 6px;
+			border-left-width: 2px
+		}
+
+		.page-modal-panel>main>.process .step-no {
+			font-size: 7px
+		}
+
+		.page-modal-panel>main>.process .step h3 {
+			font-size: 8px;
+			margin: 2px 0
+		}
+
+		.page-modal-panel>main>.process .step p {
+			font-size: 7px;
+			line-height: 1.25;
+			margin: 0
+		}
+
+		.page-modal-panel>main>.contact {
+			grid-column: 2;
+			grid-row: 4;
+			min-height: 0;
+			overflow: hidden;
+			padding: 9px 15px;
+			border-radius: 11px;
+			background: #eaf5f0
+		}
+
+		.page-modal-panel>main>.contact .contact-inner {
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 12px
+		}
+
+		.page-modal-panel>main>.contact .eyebrow {
+			font-size: 8px
+		}
+
+		.page-modal-panel>main>.contact h2 {
+			font-size: 16px;
+			line-height: 1.15;
+			margin: 3px 0
+		}
+
+		.page-modal-panel>main>.contact p {
+			font-size: 9px;
+			line-height: 1.3;
+			margin: 0
+		}
+
+		.page-modal-panel>main>.contact .button {
+			font-size: 10px;
+			padding: 8px 12px;
+			white-space: nowrap
+		}
+
+		.page-modal-panel>footer {
+			height: 35px;
+			padding: 5px 22px;
+			overflow: hidden
+		}
+
+		.page-modal-panel>footer .footer-row {
+			align-items: center;
+			gap: 10px
+		}
+
+		.page-modal-panel>footer .footer-brand {
+			font-size: 9px
+		}
+
+		.page-modal-panel>footer p {
+			font-size: 8px;
+			line-height: 1.2;
+			margin: 0
+		}
+
+		.page-modal-panel>footer .footer-row>div:last-child {
+			font-size: 8px;
+			white-space: nowrap
+		}
+	}
+
+	@media(min-width:900px) and (max-height:700px) {
+		.page-modal-panel>main {
+			grid-template-rows: clamp(115px, 17vh, 132px) 42px minmax(0, 1fr) 78px
+		}
+
+		.page-modal-panel>main>.about .about-copy>p {
+			font-size: 9px
+		}
+
+		.page-modal-panel>main>.services .service-card p {
+			font-size: 7px
+		}
+
+		.page-modal-panel>main>.services .service-card h3 {
+			font-size: 9px
+		}
+	}
+
+	@media(min-width:900px) {
+		.page-modal-panel>main>.hero {
+			padding: 0 !important
+		}
+
+		.page-modal-panel>main>.hero .hero-grid {
+			height: 100%;
+			padding: 9px 20px !important;
+			gap: 18px;
+			grid-template-columns: 1.1fr .9fr
+		}
+
+		.page-modal-panel>main>.hero .eyebrow {
+			font-size: 12px
+		}
+
+		.page-modal-panel>main>.hero h1 {
+			font-size: clamp(29px, 2.7vw, 39px);
+			line-height: 1.12;
+			margin: 7px 0 8px
+		}
+
+		.page-modal-panel>main>.hero p {
+			font-size: 13px;
+			line-height: 1.45
+		}
+
+		.page-modal-panel>main>.hero .hero-note {
+			font-size: 11px;
+			line-height: 1.4;
+			margin-top: 9px
+		}
+
+		.page-modal-panel>main>.hero .image-frame {
+			height: 100%;
+			min-height: 0;
+			padding: 4px 4px 8px 8px
+		}
+
+		.page-modal-panel>main>.hero .image-frame img {
+			width: 100%;
+			height: 100%;
+			min-height: 0;
+			object-fit: cover
+		}
+
+		.page-modal-panel>main>.hero .image-frame:before {
+			height: 75%;
+			width: 75%
+		}
+
+		.page-modal-panel>main>.proof .proof-item b {
+			font-size: 13px
+		}
+
+		.page-modal-panel>main>.proof .proof-item span {
+			font-size: 10px
+		}
+
+		.page-modal-panel>main>.proof .proof-icon {
+			width: 33px;
+			height: 33px;
+			font-size: 16px
+		}
+
+		.page-modal-panel>main>.about .about-copy .eyebrow {
+			font-size: 11px
+		}
+
+		.page-modal-panel>main>.about .about-copy h2 {
+			font-size: 21px;
+			line-height: 1.24
+		}
+
+		.page-modal-panel>main>.about .about-copy>p {
+			font-size: 11px;
+			line-height: 1.42
+		}
+
+		.page-modal-panel>main>.about .standard b {
+			font-size: 11px
+		}
+
+		.page-modal-panel>main>.about .standard span {
+			font-size: 9px;
+			line-height: 1.3
+		}
+
+		.page-modal-panel>main>.about .quality-note {
+			font-size: 9px;
+			line-height: 1.3
+		}
+
+		.page-modal-panel>main>.services .section-head .eyebrow {
+			font-size: 10px
+		}
+
+		.page-modal-panel>main>.services .section-head h2 {
+			font-size: 20px
+		}
+
+		.page-modal-panel>main>.services .section-head p {
+			font-size: 10px
+		}
+
+		.page-modal-panel>main>.services .service-number {
+			font-size: 9px
+		}
+
+		.page-modal-panel>main>.services .service-card h3 {
+			font-size: 12px;
+			line-height: 1.25;
+			margin: 5px 0 2px
+		}
+
+		.page-modal-panel>main>.services .service-card h3 span {
+			font-size: 9px;
+			line-height: 1.25
+		}
+
+		.page-modal-panel>main>.services .service-card p {
+			font-size: 9px;
+			line-height: 1.3
+		}
+
+		.page-modal-panel>main>.services .callout .button {
+			font-size: 9px;
+			padding: 6px 11px
+		}
+
+		.page-modal-panel>main>.process .section-head .eyebrow {
+			font-size: 9px
+		}
+
+		.page-modal-panel>main>.process .section-head h2 {
+			font-size: 14px
+		}
+
+		.page-modal-panel>main>.process .step-no {
+			font-size: 8px
+		}
+
+		.page-modal-panel>main>.process .step h3 {
+			font-size: 9px
+		}
+
+		.page-modal-panel>main>.process .step p {
+			font-size: 8px;
+			line-height: 1.25
+		}
+
+		.page-modal-panel>main>.contact .eyebrow {
+			font-size: 9px
+		}
+
+		.page-modal-panel>main>.contact h2 {
+			font-size: 18px
+		}
+
+		.page-modal-panel>main>.contact p {
+			font-size: 10px
+		}
+
+		.page-modal-panel>main>.contact .button {
+			font-size: 11px;
+			padding: 9px 13px
+		}
+
+		.page-modal-panel>footer .footer-brand {
+			font-size: 10px
+		}
+
+		.page-modal-panel>footer p,
+		.page-modal-panel>footer .footer-row>div:last-child {
+			font-size: 9px
+		}
+	}
+</style>
+
 <body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
 
 	<!-- LOADER -->
-     <!-- <div id="preloader">
+	<!-- <div id="preloader">
 		<div class="loader">
 			<img src="images/preloader.gif" alt="" />
 		</div>
     </div>end loader -->
-    <!-- END LOADER -->
-	
+	<!-- END LOADER -->
+
 	<!-- Start top bar -->
-	
+
 	<!-- Start header -->
 	<header class="top-header">
 		<nav class="navbar header-nav navbar-expand-lg">
-            <div class="container">
-				<a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="image" style="max-width: 60px;"></a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
+			<div class="container">
+				<a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="image"
+						style="max-width: 60px;"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd"
+					aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
 					<span></span>
 					<span></span>
 					<span></span>
 				</button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
-                    <ul class="navbar-nav">
-                        <li><a class="nav-link active" href="#home">Home</a></li>
-                        <li><a class="nav-link" href="#about">เกี่ยวกับเรา</a></li>
-                        <li><a class="nav-link" href="#services">บริการ</a></li>
+				<div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+					<ul class="navbar-nav">
+						<li><a class="nav-link active" href="#home">Home</a></li>
+						<li><a class="nav-link" href="#about">เกี่ยวกับเรา</a></li>
+						<li><a class="nav-link" href="#services">บริการ</a></li>
 						<li><a class="nav-link" href="#gallery">แพคเกจ</a></li>
 						<li><a class="nav-link" href="#team">ติดต่อเรา</a></li>
-                        <li><a class="nav-link" href="https://www.mobilecheckups2026.org" target="_blank">ผลตรวจออนไลน์</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+						<li><a class="nav-link" href="https://www.mobilecheckups2026.org"
+								target="_blank">ผลตรวจออนไลน์</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 	</header>
 	<!-- End header -->
-	
+
 	<!-- Start Banner -->
 	<div class="ulockd-home-slider">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="pogoSlider" id="js-main-slider">
-					<div class="pogoSlider-slide" data-transition="fade" data-duration="1500" style="background-image:url(images/slider-01.jpg);">
-					
+					<div class="pogoSlider-slide" data-transition="fade" data-duration="1500"
+						style="background-image:url(images/slider-01.jpg);">
+
 					</div>
-					<div class="pogoSlider-slide" data-transition="fade" data-duration="1500" style="background-image:url(images/slider-02.jpg);">
-						
+					<div class="pogoSlider-slide" data-transition="fade" data-duration="1500"
+						style="background-image:url(images/slider-02.jpg);">
+
 					</div>
-					<div class="pogoSlider-slide" data-transition="fade" data-duration="1500" style="background-image:url(images/slider-03.jpg);">
-						
-						
+					<div class="pogoSlider-slide" data-transition="fade" data-duration="1500"
+						style="background-image:url(images/slider-03.jpg);">
+
+
 					</div>
 				</div><!-- .pogoSlider -->
 			</div>
 		</div>
 	</div>
 	<!-- End Banner -->
-	
+
 	<!-- Start About us -->
 	<div id="about" class="about-box">
 		<div class="about-a1">
@@ -176,9 +2261,33 @@
 						<div class="row align-items-center about-main-info">
 							<div class="col-lg-6 col-md-6 col-sm-12">
 								<h2> Welcome to R&B Medical</h2>
-								<p>R&B Medical Laboratory รับตรวจสุขภาพและผู้นำด้านบริการตรวจวิเคราะห์ทางห้องปฏิบัติการทางการแพทย์ที่เปิดให้บริการมากกว่า 28 ปี บริการรับตรวจสุขภาพและตรวจวิเคราะห์ทางห้องปฏิบัติการอย่างครบครันทั้งในและนอกสถานที่โดยแพทย์ พยาบาล สหวิชาชีพ และเจ้าหน้าที่มืออาชีพที่มีทักษะและความชำนาญการโดยตรง ร่วมกับการใช้เทคโนโลยีและเครื่องมือที่มีคุณภาพสูง ทันสมัย ให้ผลการวิเคราะห์ที่ถูกต้อง แม่นยำ พร้อมประกันคุณภาพตามมาตรฐานสากล</p>
-								<p>นอกจากนี้ R&B ยังให้บริการเช้ารถเอ็กซเรย์ระบบดิจิตอล อุปกรณ์ตรวจสุขภาพที่ทันสมัย และจัดหาบุคลากรมืออาชีพ สำหรับหน่วยงานตรวจสุขภาพเคลื่อนที่ด้วย</p>
-								
+								<p> R&B Medical Laboratory
+									ศูนย์บริการตรวจสุขภาพและห้องปฏิบัติการทางการแพทย์ที่มีประสบการณ์และความเชี่ยวชาญมายาวนานกว่า
+									28 ปี
+									มุ่งมั่นส่งมอบบริการตรวจสุขภาพและตรวจวิเคราะห์ทางห้องปฏิบัติการทางการแพทย์อย่างครบวงจร
+									ด้วยมาตรฐานการให้บริการที่มีคุณภาพ พร้อมตอบสนองทุกความต้องการของบุคคลทั่วไป
+									องค์กรภาครัฐ และภาคเอกชน
+
+									เราให้บริการตรวจสุขภาพทั้งในและนอกสถานที่ โดยทีมแพทย์ พยาบาล บุคลากรสหวิชาชีพ
+									และเจ้าหน้าที่ผู้เชี่ยวชาญที่มีทักษะและประสบการณ์เฉพาะด้าน
+									ผสานกับเทคโนโลยีทางการแพทย์และเครื่องมือวิเคราะห์ที่ทันสมัย
+									เพื่อให้ได้ผลการตรวจที่ถูกต้อง แม่นยำ รวดเร็ว และเชื่อถือได้
+									พร้อมระบบควบคุมและประกันคุณภาพตามมาตรฐานสากล
+
+									นอกเหนือจากบริการตรวจสุขภาพและตรวจวิเคราะห์ทางห้องปฏิบัติการ R&B Medical Laboratory
+									ยังให้บริการเช่ารถเอกซเรย์ระบบดิจิทัล พร้อมอุปกรณ์ตรวจสุขภาพที่ทันสมัย
+									ตลอดจนบริการจัดหาและสนับสนุนบุคลากรทางการแพทย์และเจ้าหน้าที่ผู้เชี่ยวชาญ
+									สำหรับการจัดหน่วยบริการตรวจสุขภาพเคลื่อนที่ (Mobile Health Check-up)
+									เพื่ออำนวยความสะดวกให้แก่องค์กรและหน่วยงานต่าง ๆ ได้อย่างครบวงจร
+
+									เพราะเราเชื่อว่า การดูแลสุขภาพที่ดีเริ่มต้นจากการรู้เท่าทันสุขภาพของตนเอง
+
+									R&B Medical Laboratory จึงให้ความสำคัญกับทุกรายละเอียด ตั้งแต่การให้บริการ
+									การตรวจวิเคราะห์ ไปจนถึงการส่งมอบผลตรวจที่มีคุณภาพ
+									เพื่อให้ทุกคนได้รับความมั่นใจและความสะดวกสบายในทุกขั้นตอน
+
+									R&B Medical Laboratory – มากกว่าการตรวจสุขภาพ คือความใส่ใจในคุณภาพชีวิตของคุณ</p>
+
 							</div>
 							<div class="col-lg-6 col-md-6 col-sm-12">
 								<div class="about-m">
@@ -202,7 +2311,7 @@
 		</div>
 	</div>
 	<!-- End About us -->
-	
+
 	<!-- Start Services -->
 	<div id="services" class="services-box">
 		<div class="container">
@@ -210,11 +2319,11 @@
 				<div class="col-lg-12">
 					<div class="title-box">
 						<h2>บริการของเรา</h2>
-						
+
 					</div>
 				</div>
 			</div>
-			
+
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="owl-carousel owl-theme">
@@ -225,7 +2334,8 @@
 								<p class="description">
 									บริการตรวจสุขภาพทั่วไปบริการด้วยห้องแลปที่ทันสมัย ปลอดเชื้อ และผลที่แม่นยำ.
 								</p>
-								<button class="new-btn-d br-2 border border-success text-success" onclick="openModal()">Read More</button>
+								<button class="new-btn-d br-2 border border-success text-success"
+									onclick="openModal()">Read More</button>
 							</div>
 						</div>
 						<div class="item">
@@ -235,7 +2345,8 @@
 								<p class="description">
 									บริการตรวจสุขภาพเคลื่อนที่ให้บริการทั่วไป พร้อมทีมงานคุณภาพและอุปกรณ์ที่ทันสมัย
 								</p>
-								<button class="new-btn-d br-2 border border-success text-success" onclick="openModal2()">Read More</button>
+								<button class="new-btn-d br-2 border border-success text-success"
+									onclick="openModal2()">Read More</button>
 							</div>
 						</div>
 						<div class="item">
@@ -245,7 +2356,8 @@
 								<p class="description">
 									บริการให้เช่ารถเอ็กซเรย์ระบบดิจิตอลพร้อมเจ้าหน้าที่
 								</p>
-								<button class="new-btn-d br-2 border border-success text-success" onclick="openModal3()">Read More</button>
+								<button class="new-btn-d br-2 border border-success text-success"
+									onclick="openModal3()">Read More</button>
 							</div>
 						</div>
 						<div class="item">
@@ -253,9 +2365,10 @@
 								<div class="service-icon"><i class="fa fa-stethoscope" aria-hidden="true"></i></div>
 								<h3 class="title">จัดหาบุคลากรสำหรับงานตรวจสุขภาพ</h3>
 								<p class="description">
-									บริการจัดหาบุคลากรมืออาชีพ สำหรับหน่วยงานตรวจสุขภาพเคลื่อนที่
+									บริการจัดหาบุคลากรมืออาชีพ สำหรับหน่วยงานตรวจสุขภาพ
 								</p>
-								<button class="new-btn-d br-2 border border-success text-success" onclick="openModal4()">Read More</button>
+								<button class="new-btn-d br-2 border border-success text-success"
+									onclick="openModal4()">Read More</button>
 							</div>
 						</div>
 						<div class="item">
@@ -263,22 +2376,23 @@
 								<div class="service-icon"><i class="fa fa-wheelchair" aria-hidden="true"></i></div>
 								<h3 class="title">ให้เช่าเครื่องมือตรวจอาชีวอนามัย</h3>
 								<p class="description">
-									บริการให้เช่าเครื่องมือตรวจอาชีวอนามัยทุกชนิด 
+									บริการให้เช่าเครื่องมือตรวจอาชีวอนามัยทุกชนิด
 								</p>
-								<button class="new-btn-d br-2 border border-success text-success" onclick="openModal5()">Read More</button>
+								<button class="new-btn-d br-2 border border-success text-success"
+									onclick="openModal5()">Read More</button>
 							</div>
 						</div>
-						
-					
+
+
 					</div>
 				</div>
-			</div>			
+			</div>
 		</div>
 	</div>
 	<!-- End Services -->
-	
-	
-	
+
+
+
 	<!-- Start Gallery -->
 	<div id="gallery" class="gallery-box">
 		<div class="container-fluid">
@@ -290,15 +2404,16 @@
 					</div>
 				</div>
 			</div>
-			
+
 			<div class="popup-gallery row clearfix">
 				<div class="col-md-3 col-sm-6">
 					<div class="box-gallery">
 						<img src="images/gallery-01.jpg" alt="">
-						<div class="box-content">	
+						<div class="box-content">
 							<h3 class="title">รายละเอียดแพ็กเกจ</h3>
 							<ul class="icon">
-								<li><a href="images/gallery-05.jpg"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>								
+								<li><a href="images/gallery-05.jpg"><i class="fa fa-picture-o"
+											aria-hidden="true"></i></a></li>
 							</ul>
 						</div>
 					</div>
@@ -309,34 +2424,36 @@
 						<div class="box-content">
 							<h3 class="title">รายละเอียดแพ็กเกจ</h3>
 							<ul class="icon">
-								<li><a href="images/gallery-06.jpg"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>								
+								<li><a href="images/gallery-06.jpg"><i class="fa fa-picture-o"
+											aria-hidden="true"></i></a></li>
 							</ul>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3 col-sm-6">					
+				<div class="col-md-3 col-sm-6">
 					<div class="box-gallery">
 						<img src="images/gallery-03.jpg" alt="">
-						<div class="box-content">	
-							<h3 class="title">รายละเอียดแพ็กเกจ</h3>						
+						<div class="box-content">
+							<h3 class="title">รายละเอียดแพ็กเกจ</h3>
 							<ul class="icon">
-								<li><a href="images/gallery-07.jpg"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>								
+								<li><a href="images/gallery-07.jpg"><i class="fa fa-picture-o"
+											aria-hidden="true"></i></a></li>
 							</ul>
 						</div>
 					</div>
 				</div>
-			<div class="col-md-3 col-sm-6">					
+				<div class="col-md-3 col-sm-6">
 					<div class="box-gallery">
 						<img src="images/gallery-04.jpg" alt="">
-						
+
 					</div>
 				</div>
-				
+
 			</div>
 		</div>
 	</div>
 	<!-- End Gallery -->
-	
+
 	<!-- Start Team -->
 	<div id="team" class="team-box">
 		<div class="container">
@@ -348,43 +2465,43 @@
 					</div>
 				</div>
 			</div>
-			
+
 			<div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <div class="our-team">
-                        <div class="pic">
-                            <img src="images/img-1.jpg" alt="">
-                        </div>
-                       
-                    </div>
-                </div>
+				<div class="col-md-4 col-sm-6">
+					<div class="our-team">
+						<div class="pic">
+							<img src="images/img-1.jpg" alt="">
+						</div>
 
-                <div class="col-md-4 col-sm-6">
-                    <div class="our-team">
-                        <div class="pic">
-                            <img src="images/img-2.jpg" alt="">
-                        </div>
-                      
-                    </div>
-                </div>
+					</div>
+				</div>
 
-                <div class="col-md-4 col-sm-6">
-                    <div class="our-team">
-                        <div class="pic">
-                            <img src="images/img-3.jpg" alt="">
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-			
+				<div class="col-md-4 col-sm-6">
+					<div class="our-team">
+						<div class="pic">
+							<img src="images/img-2.jpg" alt="">
+						</div>
+
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-6">
+					<div class="our-team">
+						<div class="pic">
+							<img src="images/img-3.jpg" alt="">
+						</div>
+
+					</div>
+				</div>
+			</div>
+
 		</div>
 	</div>
-	
+
 	<!-- End Team -->
-	
-	
-	
+
+
+
 	<!-- Start Contact -->
 	<div id="contact" class="contact-box">
 		<div class="container">
@@ -397,46 +2514,50 @@
 				</div>
 			</div>
 			<div class="row">
-				
+
 				<div class="col-lg-12 col-xs-12">
-				  <div class="contact-block">
-					<form id="contactForm">
-					  <div class="row">
-						<div class="col-md-6">
-							<div class="form-group">
-								<input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name">
-								<div class="help-block with-errors"></div>
-							</div>                                 
-						</div>
-						<div class="col-md-6">
-							<div class="form-group">
-								<input type="text" placeholder="Your Email" id="email" class="form-control" name="name" required data-error="Please enter your email">
-								<div class="help-block with-errors"></div>
-							</div> 
-						</div>
-						<div class="col-md-12">
-							<div class="form-group">
-								<input type="text" placeholder="Your number" id="number" class="form-control" name="number" required data-error="Please enter your number">
-								<div class="help-block with-errors"></div>
-							</div> 
-						</div>
-						<div class="col-md-12">
-							<div class="form-group"> 
-								<textarea class="form-control" id="message" placeholder="Your Message" rows="8" data-error="Write your message" required></textarea>
-								<div class="help-block with-errors"></div>
+					<div class="contact-block">
+						<form id="contactForm">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="text" class="form-control" id="name" name="name"
+											placeholder="Your Name" required data-error="Please enter your name">
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="text" placeholder="Your Email" id="email" class="form-control"
+											name="name" required data-error="Please enter your email">
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+										<input type="text" placeholder="Your number" id="number" class="form-control"
+											name="number" required data-error="Please enter your number">
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+										<textarea class="form-control" id="message" placeholder="Your Message" rows="8"
+											data-error="Write your message" required></textarea>
+										<div class="help-block with-errors"></div>
+									</div>
+									<div class="submit-button text-center">
+										<button class="btn btn-common" id="submit" type="submit">Send Message</button>
+										<div id="msgSubmit" class="h3 text-center hidden"></div>
+										<div class="clearfix"></div>
+									</div>
+								</div>
 							</div>
-							<div class="submit-button text-center">
-								<button class="btn btn-common" id="submit" type="submit">Send Message</button>
-								<div id="msgSubmit" class="h3 text-center hidden"></div> 
-								<div class="clearfix"></div> 
-							</div>
-						</div>
-					  </div>            
-					</form>
-				  </div>
+						</form>
+					</div>
 				</div>
-				
-				
+
+
 				<div class="col-lg-12 col-xs-12">
 					<div class="left-contact">
 						<h2>Contact</h2>
@@ -472,211 +2593,1343 @@
 						</div>
 					</div>
 				</div>
-				
-				
+
+
 			</div>
 		</div>
 	</div>
 	<!-- End Contact -->
-	
-	
-	 <section id="modal1"  style="display:none;" >
-	<modal class="modal" role="dialog" aria-labelledby="modal-title" >
-    <img
-      class="modal-image"
-      src="images/check1.jpg"
-      alt="ภาพประกอบ"
-    />
 
-    <div class="modal-content">
-      <h2 id="modal-title">บริการตรวจสุขภาพ</h2>
-      <p>บริการตรวจสุขภาพด้วยการเจาะเลือด เก็บปัสสาวะ นำไปวิเคราะห์ในห้องปฎิบัติการ ด้วยเครื่องมือทันสมัย ผลตรวจแม่นยำ อ่านผลด้วยเทคนิคการแพทย์  
-		ออกผลตรวจ 1 ชั่วโมงหลังจากเก็บตัวอย่าง พร้อมแพคเกจสุดพิเศษที่ใครๆก็เข้าถึงได้ สุขภาพที่ดีเริ่มจากการใส่ใจและรู้เท่าทันร่างกายของตนเอง การตรวจสุขภาพเป็นประจำช่วยให้คุณได้ติดตามข้อมูลสุขภาพเบื้องต้น และวางแผนดูแลตัวเองได้เหมาะสมยิ่งขึ้น
-ขอเชิญทุกท่านเข้ารับบริการตรวจสุขภาพที่ R&B Medical Laboratory เราพร้อมให้บริการตรวจวิเคราะห์ทางห้องปฏิบัติการโดยบุคลากรผู้เชี่ยวชาญ พร้อมให้คำแนะนำเกี่ยวกับการเตรียมตัวก่อนตรวจตามรายการที่เลือก
-ไม่ว่าจะตรวจสุขภาพประจำปี หรือต้องการติดตามผลตรวจเดิม อย่ารอให้มีอาการแล้วค่อยเริ่มดูแลตัวเอง
-รายการตรวจและการเตรียมตัวอาจแตกต่างกัน กรุณาสอบถามคลินิกก่อนเข้ารับบริการ
-	  </p>
-	    <button class="modal-close" type="button" aria-label="ปิด" onclick="closeModal()">
-    &times;
-  </button>
-    </div>
-</modal>
-</section>
-  <script>
-       function openModal() {
-    document.getElementById("modal1").style.display = "block";
-	
-	
-  }
+	<!-- start modal -->
+	<div class="page-modal" id="modal1" role="dialog" style="display: none;">
+		<div class="page-modal-panel" style="margin-left: 150px;">
+			<button class="modal-close" type="button" aria-label="ปิดหน้าต่าง" onclick="closeModal()">×</button>
+			<main>
+				<section class="hero">
+					<div class="container hero-grid">
+						<div>
+							<span class="eyebrow">ดูแลสุขภาพด้วยผลตรวจที่เชื่อถือได้</span>
+							<h1>เข้าใจสุขภาพ<br>เริ่มต้นจากผลตรวจที่แม่นยำ</h1>
+							<p>เมดิคอลไลน์ แล็บ ให้บริการตรวจวิเคราะห์ทางห้องปฏิบัติการ ครอบคลุมหลากหลายสาขา
+								เพื่อสนับสนุนการคัดกรองและวินิจฉัยสุขภาพ ด้วยระบบคุณภาพที่พัฒนาอย่างต่อเนื่อง</p>
+							<div class="hero-actions"><a class="button" href="#services">ดูบริการตรวจวิเคราะห์
+									<span>→</span></a><a class="button secondary" href="#about">รู้จักเรา</a></div>
+							<div class="hero-note">มุ่งมั่นส่งมอบผลตรวจที่ถูกต้อง แม่นยำ และเป็นประโยชน์ต่อผู้รับบริการ
+							</div>
+							<div class="hero-facts">
+								<div><strong>11</strong><span>สาขาบริการตรวจ</span></div><i></i>
+								<div><strong>3</strong><span>ระบบมาตรฐานคุณภาพ</span></div><i></i>
+								<div><strong>ใส่ใจ</strong><span>ทุกขั้นตอนบริการ</span></div>
+							</div>
+						</div>
+						<div class="image-frame"><img src="images/lab.png"
+								alt="บรรยากาศห้องปฏิบัติการ เมดิคอลไลน์ แล็บ">
+							<div class="image-label"><strong>มาตรฐาน • ความใส่ใจ •
+									ความแม่นยำ</strong>ภาพห้องปฏิบัติการของเรา</div>
+						</div>
+					</div>
+				</section>
+				<div class="proof">
+					<div class="container proof-grid">
+						<div class="proof-item">
+							<div class="proof-icon">◎</div>
+							<div><b>ISO 15189</b><span>มาตรฐานห้องปฏิบัติการทางการแพทย์</span></div>
+						</div>
+						<div class="proof-item">
+							<div class="proof-icon">＋</div>
+							<div><b>ISO 15190</b><span>ระบบความปลอดภัยห้องปฏิบัติการ</span></div>
+						</div>
+						<div class="proof-item">
+							<div class="proof-icon">✓</div>
+							<div><b>ISO 9001</b><span>ระบบบริหารคุณภาพ</span></div>
+						</div>
+					</div>
+				</div>
+				<section class="about" id="about">
+					<div class="container about-grid">
+						<div class="about-photo"><img src="images/labteam.png"
+								alt="ทีมงานและห้องปฏิบัติการ เมดิคอลไลน์ แล็บ"></div>
+						<div class="about-copy"><span class="eyebrow">เกี่ยวกับเรา</span>
+							<h2>ใส่ใจทุกรายละเอียด<br>เพื่อข้อมูลสุขภาพที่คุณวางใจ</h2>
+							<p>ห้องปฏิบัติการทางการแพทย์ของเมดิคอลไลน์ แล็บ ดำเนินงานตามมาตรฐานของกรมวิทยาศาสตร์การแพทย์
+								และได้รับการรับรองระบบคุณภาพห้องปฏิบัติการทางการแพทย์ ISO 15189 ระบบความปลอดภัย ISO
+								15190 และระบบคุณภาพ ISO 9001</p>
+							<p>เราตรวจติดตามคุณภาพภายในอย่างสม่ำเสมอ
+								เพื่อให้การวิเคราะห์และรายงานผลอยู่ภายใต้การควบคุมตามมาตรฐานวิชาชีพ</p>
+							<div class="standards" id="quality">
+								<div class="standard"><b>ISO 15189</b><span>คุณภาพห้องปฏิบัติการทางการแพทย์</span></div>
+								<div class="standard"><b>ISO 15190</b><span>ความปลอดภัยในห้องปฏิบัติการ</span></div>
+								<div class="standard"><b>ISO 9001</b><span>ระบบบริหารจัดการคุณภาพ</span></div>
+								<div class="standard"><b>ตรวจติดตามต่อเนื่อง</b><span>ใส่ใจคุณภาพในทุกขั้นตอน</span>
+								</div>
+							</div>
+							<div class="quality-note">การรับรองโดยสำนักมาตรฐานห้องปฏิบัติการ กรมวิทยาศาสตร์การแพทย์
+								กระทรวงสาธารณสุข (ตามข้อมูลที่ได้รับ)</div>
+						</div>
+					</div>
+				</section>
+				<section class="services" id="services">
+					<div class="container">
+						<div class="section-head"><span class="eyebrow">บริการของเรา</span>
+							<h2>ตรวจวิเคราะห์ครอบคลุม 11 สาขา</h2>
+							<p>เลือกบริการตรวจที่เหมาะกับความต้องการ โดยทีมงานห้องปฏิบัติการที่ใส่ใจในทุกขั้นตอน</p>
+						</div>
+						<div class="service-grid">
+							<article class="service-card"><span class="service-number">01 / 11</span>
+								<h3>จุลชีววิทยาคลินิก<span>Clinical Microbiology</span></h3>
+								<p>ตรวจหาและจำแนกจุลชีพที่ก่อโรคจากสิ่งส่งตรวจ เช่น อุจจาระ ปัสสาวะ และเลือด</p>
+							</article>
+							<article class="service-card"><span class="service-number">02 / 11</span>
+								<h3>โลหิตวิทยาคลินิก<span>Clinical Hematology</span></h3>
+								<p>ตรวจความสมบูรณ์ของเม็ดเลือด ภาวะโลหิตจาง และการแข็งตัวของเลือด</p>
+							</article>
+							<article class="service-card"><span class="service-number">03 / 11</span>
+								<h3>เคมีคลินิก<span>Clinical Chemistry</span></h3>
+								<p>ตรวจวิเคราะห์สารและส่วนประกอบในเลือด เช่น เกลือแร่และไขมัน</p>
+							</article>
+							<article class="service-card"><span class="service-number">04 / 11</span>
+								<h3>ภูมิคุ้มกันวิทยาคลินิก<span>Clinical Immunology</span></h3>
+								<p>ตรวจระดับภูมิคุ้มกัน รวมถึงแอนติบอดีและแอนติเจน</p>
+							</article>
+							<article class="service-card"><span class="service-number">05 / 11</span>
+								<h3>ธนาคารเลือด<span>Blood Bank</span></h3>
+								<p>ตรวจหมู่เลือดและความเข้ากันได้ของเลือดระหว่างผู้บริจาคกับผู้รับ</p>
+							</article>
+							<article class="service-card"><span class="service-number">06 / 11</span>
+								<h3>ปรสิตวิทยาคลินิก<span>Clinical Parasitology</span></h3>
+								<p>ตรวจวินิจฉัยโปรโตซัว หนอนพยาธิ และสัตว์ขาข้อที่ก่อโรคในมนุษย์</p>
+							</article>
+							<article class="service-card"><span class="service-number">07 / 11</span>
+								<h3>จุลทรรศนศาสตร์คลินิก<span>Clinical Microscopy</span></h3>
+								<p>ตรวจปัสสาวะ อุจจาระ และการตั้งครรภ์ เพื่อประกอบการประเมินสุขภาพ</p>
+							</article>
+							<article class="service-card"><span class="service-number">08 / 11</span>
+								<h3>พยาธิวิทยาคลินิก<span>Clinical Pathology</span></h3>
+								<p>ตรวจหาความผิดปกติจากเลือด น้ำไขสันหลัง สารน้ำ เสมหะ และสิ่งส่งตรวจอื่น</p>
+							</article>
+							<article class="service-card"><span class="service-number">09 / 11</span>
+								<h3>พยาธิวิทยากายวิภาค<span>Anatomical Pathology</span></h3>
+								<p>ตรวจชิ้นเนื้อทางศัลยพยาธิวิทยา เพื่อวินิจฉัยโรคและความผิดปกติของเนื้อเยื่อ</p>
+							</article>
+							<article class="service-card"><span class="service-number">10 / 11</span>
+								<h3>พิษวิทยาคลินิก<span>Clinical Toxicology</span></h3>
+								<p>ตรวจหาระดับยา สารพิษ โลหะหนัก และสารที่อาจก่อพิษต่อร่างกาย</p>
+							</article>
+							<article class="service-card"><span class="service-number">11 / 11</span>
+								<h3>ชีววิทยาระดับโมเลกุล<span>Cytogenetic, Genetics &amp; Molecular Pathology</span>
+								</h3>
+								<p>ตรวจหาสารพันธุกรรมจากเนื้อเยื่อ เลือด น้ำคร่ำ หรือเชื้อจุลินทรีย์</p>
+							</article>
+						</div>
+						<div class="callout">
+							<div>
+								<h3>ไม่แน่ใจว่าควรเริ่มตรวจแบบไหน?</h3>
+								<p>ติดต่อสอบถามรายการตรวจและรายละเอียดการให้บริการกับทีมงานของเรา</p>
+							</div>
+							<div class="callout-actions"><button class="button annual-trigger" type="button"
+									onclick="openAnnualModal()">ดูรายละเอียดตรวจสุขภาพประจำปี <span>＋</span></button><a
+									class="button" href="tel:0926368867">โทรสอบถาม <span>→</span></a></div>
+						</div>
+					</div>
+				</section>
+				<section class="process">
+					<div class="container">
+						<div class="section-head"><span class="eyebrow">มั่นใจในทุกขั้นตอน</span>
+							<h2>คุณภาพที่ใส่ใจ ตั้งแต่รับสิ่งส่งตรวจจนถึงรายงานผล</h2>
+							<p>กระบวนการทำงานที่ยึดมาตรฐานวิชาชีพและการควบคุมคุณภาพอย่างต่อเนื่อง</p>
+						</div>
+						<div class="process-grid">
+							<div class="step"><span class="step-no">STEP 01</span>
+								<h3>เลือกบริการตรวจ</h3>
+								<p>สอบถามรายการตรวจและรายละเอียดที่ตรงกับความต้องการของคุณ</p>
+							</div>
+							<div class="step"><span class="step-no">STEP 02</span>
+								<h3>ดำเนินการตรวจวิเคราะห์</h3>
+								<p>ห้องปฏิบัติการดำเนินงานภายใต้ระบบคุณภาพและความปลอดภัย</p>
+							</div>
+							<div class="step"><span class="step-no">STEP 03</span>
+								<h3>รับรายงานผล</h3>
+								<p>ผลตรวจเป็นข้อมูลประกอบการประเมินและดูแลสุขภาพ</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="contact" id="contact">
+					<div class="container contact-inner">
+						<div><span class="eyebrow">พร้อมให้คำแนะนำ</span>
+							<h2>เริ่มต้นดูแลสุขภาพ<br>ด้วยข้อมูลที่เชื่อถือได้</h2>
+							<p>สอบถามบริการได้ที่ คุณอุทุมพร (บิ๊ก) โทร. 092-636-8867</p>
+						</div><a class="button" href="tel:0926368867">โทรสอบถาม 092-636-8867 <span>↗</span></a>
+					</div>
+				</section>
+			</main>
+			<footer>
+				<div class="container footer-row">
+					<div>
+						<div class="footer-brand">R&amp;B Medical Laboratory</div>
+						<p>ผลตรวจทางห้องปฏิบัติการเป็นข้อมูลประกอบการดูแลสุขภาพ ควรปรึกษาบุคลากรทางการแพทย์</p>
+					</div>
+					<div>© <span id="year"></span> R&amp;B Medical Laboratory · All rights reserved.</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+	<div class="annual-modal" id="annualCheckupModal" role="dialog" aria-modal="true" aria-labelledby="annualTitle"
+		hidden>
+		<div class="annual-panel">
+			<button class="annual-close" type="button"eModal2()">×</button>
+			<section class="annual-hero">
+				<div class="annual-hero-inner">
+					<div><span class="eyebrow">ANNUAL HEALTH CHECKUP</span>
+						<h2 id="annualTitle">ตรวจสุขภาพประจำปี<br>เริ่มต้นดูแลสุขภาพอย่างเข้าใจ</h2>
+						<p>การตรวจสุขภาพช่วยให้เห็นข้อมูลพื้นฐานและติดตามแนวโน้มสุขภาพ
+							ทีมงานพร้อมช่วยแนะนำรายการตรวจให้เหมาะกับอายุ ประวัติสุขภาพ และปัจจัยเสี่ยง</p>
+						<div class="annual-badges">
+							<span>รายการพื้นฐาน</span><span>ปรับตามแต่ละบุคคล</span><span>มีขั้นตอนชัดเจน</span></div>
+					</div><img src="images/annual-checkup.jpg" alt="บริการตรวจสุขภาพประจำปี เมดิคอลไลน์ แล็บ">
+				</div>
+			</section>
+			<div class="annual-content">
+				<div class="annual-section-title">
+					<div><span class="eyebrow">รายการตรวจ</span>
+						<h3>รายการตรวจสุขภาพพื้นฐาน</h3>
+					</div>
+					<p>ตัวอย่างรายการตรวจ อาจปรับตามคำแนะนำของบุคลากรทางการแพทย์</p>
+				</div>
+				<div class="check-grid">
+					<article class="check-item">
+						<div class="check-icon">＋</div>
+						<div>
+							<h4>ประเมินสุขภาพและตรวจร่างกาย</h4>
+							<p>ซักประวัติสุขภาพ วัดความดันโลหิต ชีพจร น้ำหนัก และส่วนสูง</p>
+						</div>
+					</article>
+					<article class="check-item">
+						<div class="check-icon">血</div>
+						<div>
+							<h4>ความสมบูรณ์ของเม็ดเลือด (CBC)</h4>
+							<p>ประเมินองค์ประกอบของเม็ดเลือด เพื่อประกอบการประเมินสุขภาพ</p>
+						</div>
+					</article>
+					<article class="check-item">
+						<div class="check-icon">◉</div>
+						<div>
+							<h4>ระดับน้ำตาลในเลือด</h4>
+							<p>เช่น Fasting Blood Sugar (FBS) ตามคำแนะนำและเงื่อนไขการเตรียมตัว</p>
+						</div>
+					</article>
+					<article class="check-item">
+						<div class="check-icon">≈</div>
+						<div>
+							<h4>ไขมันในเลือด (Lipid Profile)</h4>
+							<p>อาจประกอบด้วย Cholesterol, Triglyceride, HDL และ LDL</p>
+						</div>
+					</article>
+					<article class="check-item">
+						<div class="check-icon">◇</div>
+						<div>
+							<h4>การทำงานของตับ</h4>
+							<p>พิจารณารายการตรวจตามประวัติสุขภาพและแนวทางของแพทย์</p>
+						</div>
+					</article>
+					<article class="check-item">
+						<div class="check-icon">⌁</div>
+						<div>
+							<h4>การทำงานของไต</h4>
+							<p>เช่น Creatinine หรือรายการอื่นตามความเหมาะสมของแต่ละบุคคล</p>
+						</div>
+					</article>
+					<article class="check-item">
+						<div class="check-icon">◌</div>
+						<div>
+							<h4>ตรวจปัสสาวะ (Urinalysis)</h4>
+							<p>ตรวจคัดกรองความผิดปกติเบื้องต้นจากตัวอย่างปัสสาวะ</p>
+						</div>
+					</article>
+					<article class="check-item">
+						<div class="check-icon">♡</div>
+						<div>
+							<h4>ตรวจเพิ่มเติมตามความเสี่ยง</h4>
+							<p>พิจารณาตามอายุ เพศ อาการ ประวัติครอบครัว และคำแนะนำทางการแพทย์</p>
+						</div>
+					</article>
+				</div>
+				<div class="annual-note">รายการตรวจประจำปีไม่จำเป็นต้องเหมือนกันทุกคน
+					การตรวจบางชนิดอาจไม่เหมาะกับทุกช่วงวัยหรือทุกความเสี่ยง โปรดปรึกษาบุคลากรทางการแพทย์ก่อนเลือกตรวจ
+					และทำตามคำแนะนำเรื่องการงดอาหาร ยา และการเตรียมตัวของสถานพยาบาล</div>
+				<div class="annual-steps">
+					<div class="annual-section-title">
+						<div><span class="eyebrow">ขั้นตอนการเข้ารับบริการ</span>
+							<h3>เตรียมตัวง่าย ๆ 4 ขั้นตอน</h3>
+						</div>
+					</div>
+					<div class="annual-steps-grid">
+						<article class="annual-step"><span>STEP 01</span>
+							<h4>สอบถามและนัดหมาย</h4>
+							<p>แจ้งรายการที่สนใจ อายุ และข้อมูลสุขภาพเบื้องต้น เพื่อรับคำแนะนำ</p>
+						</article>
+						<article class="annual-step"><span>STEP 02</span>
+							<h4>เตรียมตัวก่อนตรวจ</h4>
+							<p>ตรวจสอบกับทีมงานว่าต้องงดอาหารหรือเตรียมตัวอย่างไรก่อนตรวจ</p>
+						</article>
+						<article class="annual-step"><span>STEP 03</span>
+							<h4>เข้ารับการตรวจ</h4>
+							<p>ลงทะเบียน วัดสัญญาณชีพ และเก็บสิ่งส่งตรวจตามรายการที่เลือก</p>
+						</article>
+						<article class="annual-step"><span>STEP 04</span>
+							<h4>รับผลและคำแนะนำ</h4>
+							<p>รับรายงานผลตามช่องทางที่แจ้ง และปรึกษาผู้ให้บริการเมื่อมีข้อสงสัย</p>
+						</article>
+					</div>
+				</div>
+				<div class="annual-footer">
+					<div><strong>อยากทราบว่าควรตรวจรายการใด?</strong>
+						<p>สอบถามทีมงานเพื่อรับรายละเอียดและคำแนะนำในการเตรียมตัว</p>
+					</div><a class="button" href="tel:0926368867">โทร 092-636-8867 ↗</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Modal -->
 
-  function closeModal() {
-    document.getElementById("modal1").style.display = "none";
-  }
+	<script>
+		function openModal() {
+			document.getElementById("modal1").style.display = "block";
 
-  </script>
 
-   <section id="modal2"  style="display:none;" >
-	<modal class="modal" role="dialog" aria-labelledby="modal-title" >
-    <img
-      class="modal-image"
-      src="images/check2.png"
-      alt="ภาพประกอบ"
-    />
+		}
 
-    <div class="modal-content">
-      <h2 id="modal-title">บริการตรวจสุขภาพ</h2>
-      <p>บริการตรวจสุขภาพนอกสถานที่ อาทิ โรงงาน สำนักงาน สถานประกอบการ หรือสถานที่ที่กำหนด ทั้งในกรุงเทพฯ และต่างจังหวัด โดยมีทีมแพทย์ พยาบาล สหวิชาชีพ พร้อมด้วยทีมงานด้านชีวอนามัย ที่มีความชำนาญ และมีประสบการณ์สูง พร้อมให้บริการตรวจสุขภาพ อาทิ การตรวจสุขภาพก่อนเข้าทำงาน การตรวจสุขภาพประจำปี หรือการฉีดวัคซีน เป็นต้น หน่วยตรวจสุขภาพเคลื่อนที่ 
-		อำนวยความสะดวกในการตรวจสุขภาพนอกสถานที่ด้วยเทคโนโลยีและเครื่องมือที่ทันสมัย ให้ผลการวิเคราะห์ที่ถูกต้อง แม่นยำ จัดส่งผลอย่างรวดเร็ว โดยสามารถรองรับผู้รับบริการได้ทั้งภาครัฐและเอกชน
-	บริการตรวจให้ถึงออฟิศด้วยเจ้าหน้าที่และบุคลากรทางการแพทย์ อุปกรณ์ตรวจที่มีมาตรฐานและบริการด้วยความตั้งใจ </p>
-	    <button class="modal-close" type="button" aria-label="ปิด" onclick="closeModal2()">
+		function closeModal() {
+			document.getElementById("modal1").style.display = "none";
+		}
 
-    &times;
-  </button>
-    </div>
-</modal>
-</section>
-  <script>
-       function openModal2() {
+	</script>
+	<!-- Start Modal2-->
+	<!-- Modal2: ตรวจสุขภาพประจำปี -->
+<div class="page-modal" id="modal2" role="dialog" aria-modal="true"
+     aria-labelledby="modal2-title" style=" display: none; z-index:1100;">
+  <div class="page-modal-panel" style="margin-left:150px;" id="annual-checkup-steps">
+    <button class="modal-close" type="button" aria-label="ปิดหน้าต่าง"
+            onclick="closeModal2()">×</button>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <span class="eyebrow">ANNUAL HEALTH CHECKUP</span>
+            <h1 id="modal2-title">ตรวจสุขภาพประจำปี<br>เริ่มต้นดูแลสุขภาพอย่างเข้าใจ</h1>
+            <p>ตรวจสุขภาพพื้นฐานเพื่อใช้ติดตามข้อมูลสุขภาพ พร้อมปรับรายการตรวจให้เหมาะกับอายุ ประวัติสุขภาพ และปัจจัยเสี่ยงของแต่ละบุคคล</p>
+            <div class="hero-note">สอบถามทีมงานเพื่อรับคำแนะนำเรื่องรายการตรวจและการเตรียมตัว</div>
+          </div>
+          <div class="image-frame">
+            <img src="images/lab.png" alt="ห้องปฏิบัติการสำหรับบริการตรวจสุขภาพ">
+            <div class="image-label">
+              <strong>ตรวจอย่างใส่ใจ</strong>
+              ภายใต้มาตรฐานห้องปฏิบัติการ
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="proof">
+        <div class="container proof-grid">
+          <div class="proof-item">
+            <div class="proof-icon">＋</div>
+            <div><b>ประเมินสุขภาพ</b><span>เริ่มจากข้อมูลสุขภาพพื้นฐาน</span></div>
+          </div>
+          <div class="proof-item">
+            <div class="proof-icon">✓</div>
+            <div><b>รายการตรวจเหมาะสม</b><span>พิจารณาตามแต่ละบุคคล</span></div>
+          </div>
+          <div class="proof-item">
+            <div class="proof-icon">◎</div>
+            <div><b>มีขั้นตอนชัดเจน</b><span>ตั้งแต่เตรียมตัวจนรับผล</span></div>
+          </div>
+        </div>
+      </div>
+
+      <section class="services" id="annual-checkup-list">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow">รายการตรวจ</span>
+            <h2>รายการตรวจสุขภาพพื้นฐาน</h2>
+            <p>รายการตรวจอาจปรับตามคำแนะนำของบุคลากรทางการแพทย์</p>
+          </div>
+
+          <div class="service-grid">
+            <article class="service-card">
+              <span class="service-number">01</span>
+              <h3>ประเมินสุขภาพและตรวจร่างกาย</h3>
+              <p>ซักประวัติ วัดความดันโลหิต ชีพจร น้ำหนัก และส่วนสูง</p>
+            </article>
+            <article class="service-card">
+              <span class="service-number">02</span>
+              <h3>ความสมบูรณ์ของเม็ดเลือด <span>CBC</span></h3>
+              <p>ตรวจองค์ประกอบของเม็ดเลือดเพื่อประกอบการประเมินสุขภาพ</p>
+            </article>
+            <article class="service-card">
+              <span class="service-number">03</span>
+              <h3>ระดับน้ำตาลในเลือด <span>FBS</span></h3>
+              <p>ตรวจตามเงื่อนไขและคำแนะนำเรื่องการเตรียมตัว</p>
+            </article>
+            <article class="service-card">
+              <span class="service-number">04</span>
+              <h3>ไขมันในเลือด <span>Lipid Profile</span></h3>
+              <p>อาจประกอบด้วย Cholesterol, Triglyceride, HDL และ LDL</p>
+            </article>
+            <article class="service-card">
+              <span class="service-number">05</span>
+              <h3>การทำงานของตับ</h3>
+              <p>พิจารณารายการตรวจจากประวัติสุขภาพและคำแนะนำทางการแพทย์</p>
+            </article>
+            <article class="service-card">
+              <span class="service-number">06</span>
+              <h3>การทำงานของไต</h3>
+              <p>เช่น Creatinine หรือรายการอื่นตามความเหมาะสม</p>
+            </article>
+            <article class="service-card">
+              <span class="service-number">07</span>
+              <h3>ตรวจปัสสาวะ <span>Urinalysis</span></h3>
+              <p>ตรวจคัดกรองความผิดปกติเบื้องต้นจากตัวอย่างปัสสาวะ</p>
+            </article>
+            <article class="service-card">
+              <span class="service-number">08</span>
+              <h3>ตรวจเพิ่มเติมตามความเสี่ยง</h3>
+              <p>พิจารณาตามอายุ เพศ อาการ และประวัติครอบครัว</p>
+            </article>
+          </div>
+
+          <div class="quality-note">
+            รายการตรวจไม่จำเป็นต้องเหมือนกันทุกคน โปรดปรึกษาบุคลากรทางการแพทย์
+            และทำตามคำแนะนำเรื่องการงดอาหาร ยา หรือการเตรียมตัวก่อนตรวจ
+          </div>
+        </div>
+      </section>
+
+      <section class="process" id="annual-checkup-steps">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow">ขั้นตอนการรับบริการ</span>
+            <h2>เตรียมตัวง่าย ๆ 4 ขั้นตอน</h2>
+          </div>
+          <div class="process-grid" style="grid-template-columns:repeat(4,minmax(0,1fr));">
+            <div class="step">
+              <span class="step-no">STEP 01</span>
+              <h3>สอบถามและนัดหมาย</h3>
+              <p>แจ้งรายการที่สนใจและข้อมูลสุขภาพเบื้องต้น</p>
+            </div>
+            <div class="step">
+              <span class="step-no">STEP 02</span>
+              <h3>เตรียมตัวก่อนตรวจ</h3>
+              <p>สอบถามทีมงานว่าต้องงดอาหารหรือเตรียมตัวอย่างไร</p>
+            </div>
+            <div class="step">
+              <span class="step-no">STEP 03</span>
+              <h3>เข้ารับการตรวจ</h3>
+              <p>ลงทะเบียนและเก็บสิ่งส่งตรวจตามรายการ</p>
+            </div>
+            <div class="step">
+              <span class="step-no">STEP 04</span>
+              <h3>รับผลและคำแนะนำ</h3>
+              <p>รับรายงานผลและสอบถามเมื่อมีข้อสงสัย</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="container contact-inner">
+          <div>
+            <span class="eyebrow">พร้อมให้คำแนะนำ</span>
+            <h2>สอบถามรายละเอียดการตรวจสุขภาพ</h2>
+            <p>คุณอุทุมพร (บิ๊ก) โทร. 092-636-8867</p>
+          </div>
+          <a class="button" href="tel:0926368867">โทรสอบถาม ↗</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-row">
+        <div>
+          <div class="footer-brand">R&amp;B Medical Laboratory</div>
+          <p>ผลตรวจเป็นข้อมูลประกอบการดูแลสุขภาพ ควรปรึกษาบุคลากรทางการแพทย์</p>
+        </div>
+        <div>© R&amp;B Medical Laboratory · All rights reserved.</div>
+      </div>
+    </footer>
+  </div>
+</div>
+
+<script>
+  function openModal2() {
     document.getElementById("modal2").style.display = "block";
-	
-	
   }
 
   function closeModal2() {
     document.getElementById("modal2").style.display = "none";
   }
-
-  </script>
-
-     <section id="modal3"  style="display:none;" >
-	<modal class="modal" role="dialog" aria-labelledby="modal-title" >
-    <img
-      class="modal-image"
-      src="images/check3.png"
-      alt="ภาพประกอบ"
-    />
-
-    <div class="modal-content">
-      <h2 id="modal-title">บริการให้เช่ารถเอ็กซเรย์</h2>
-      <p>บริการนี้เหมาะสำหรับ สถานพยาบาล/รพ.ที่ต้องการใช้บริการเอกซเรย์ดิจิตอลอย่างเดียว หรือหน่วยงาน/บริษัท ที่มีบุคลากรที่มีความเสี่ยงต่อการเกิดโรคปอด ต้องการตรวจเอกซเรย์ปอดเพียงอย่างเดียว พร้อมการรายงานผลจากรังสีแพทย์ โดยรายงานผลเป็นซีดีฉบับรวมสำหรับแผนกบุคคล 
-		และซีดีแยกแผ่นรายบุคคลสำหรับผู้รับการตรวจแต่ละราย นอกจากนี้ ยังมีบริการรับอ่านฟิล์มโดยรังสีแพทย์ สำหรับสถานพยาบาล/ผู้ประกอบการที่ไม่มีรังสีแพทย์ประจำ</p>
-	    <button class="modal-close" type="button" aria-label="ปิด" onclick="closeModal3()">
-
-    &times;
-  </button>
+</script>
+	  
+    
+	<!-- End Modal2-->
+    <!-- Start Modal3-->
+      <div class="page-modal" id="modal3" role="dialog" aria-modal="true"
+     aria-labelledby="xray-title" aria-hidden="true">
+  <div class="xray-panel" style="margin-left: 300px;">
+    <div class="xray-top">
+      <div>
+        <span class="xray-kicker">MOBILE DIGITAL X-RAY</span>
+        <h2 class="xray-title" id="xray-title">
+          บริการเช่ารถเอกซเรย์เคลื่อนที่ระบบดิจิทัล
+        </h2>
+        <p class="xray-intro">
+          จัดบริการตรวจเอกซเรย์ถึงสถานที่ของคุณ ช่วยให้สถานพยาบาลและองค์กร
+          วางแผนการตรวจได้สะดวก ลดการเดินทางของผู้เข้ารับบริการ
+          พร้อมการอ่านผลและรายงานโดยรังสีแพทย์ตามรูปแบบบริการที่ตกลงกัน
+        </p>
+      </div>
+      <button class="xray-close" type="button" aria-label="ปิดหน้าต่าง"
+              onclick="closeModal3()">×</button>
     </div>
-</modal>
-</section>
-  <script>
-       function openModal3() {
-    document.getElementById("modal3").style.display = "block";
-	
-	
+
+    <div class="xray-hero">
+      <div class="xray-points">
+        <article class="xray-point">
+          <div class="xray-icon">01</div>
+          <div>
+            <h3>ตรวจได้ ณ หน่วยงาน</h3>
+            <p>เหมาะสำหรับองค์กรหรือสถานพยาบาลที่ต้องการจัดตรวจในพื้นที่ของตน</p>
+          </div>
+        </article>
+        <article class="xray-point">
+          <div class="xray-icon">02</div>
+          <div>
+            <h3>ระบบภาพดิจิทัล</h3>
+            <p>ช่วยให้การจัดการภาพและรายงานผลเป็นระบบ สอบถามรูปแบบไฟล์และรายงานได้</p>
+          </div>
+        </article>
+        <article class="xray-point">
+          <div class="xray-icon">03</div>
+          <div>
+            <h3>อ่านผลโดยรังสีแพทย์</h3>
+            <p>มีบริการอ่านผลและจัดทำรายงานตามขอบเขตบริการที่นัดหมาย</p>
+          </div>
+        </article>
+      </div>
+      <img class="xray-image" src="images/mobile-xray.png"
+           alt="รถเอกซเรย์เคลื่อนที่ระบบดิจิทัล">
+    </div>
+
+    <h3 class="xray-section-title">เหมาะสำหรับ</h3>
+    <div class="xray-audience">
+      <article>
+        <b>องค์กรและสถานประกอบการ</b>
+        <p>จัดตรวจสุขภาพพนักงานในสถานที่ ช่วยให้วางแผนรอบตรวจได้สะดวก</p>
+      </article>
+      <article>
+        <b>โรงพยาบาลและคลินิก</b>
+        <p>เสริมบริการเอกซเรย์ในช่วงที่ต้องการ โดยไม่ต้องจัดซื้อรถหรือเครื่องมือเอง</p>
+      </article>
+      <article>
+        <b>หน่วยงานที่ต้องการอ่านผล</b>
+        <p>สอบถามบริการอ่านผลภาพเอกซเรย์โดยรังสีแพทย์สำหรับหน่วยงานของคุณ</p>
+      </article>
+    </div>
+
+    <h3 class="xray-section-title">ขั้นตอนการใช้บริการ</h3>
+    <div class="xray-steps">
+      <article class="xray-step">
+        <span>STEP 01</span>
+        <h3>แจ้งความต้องการ</h3>
+        <p>แจ้งสถานที่ จำนวนผู้เข้ารับบริการ และช่วงเวลาที่ต้องการ</p>
+      </article>
+      <article class="xray-step">
+        <span>STEP 02</span>
+        <h3>วางแผนการให้บริการ</h3>
+        <p>ทีมงานประสานรายละเอียดและเตรียมรูปแบบการตรวจให้เหมาะกับหน่วยงาน</p>
+      </article>
+      <article class="xray-step">
+        <span>STEP 03</span>
+        <h3>เข้าตรวจและรับรายงาน</h3>
+        <p>ดำเนินการตรวจตามนัด พร้อมแจ้งช่องทางและกำหนดรับรายงานผล</p>
+      </article>
+    </div>
+
+    <div class="xray-contact">
+      <div>
+        <strong>สอบถามรายละเอียดและขอใบเสนอราคา</strong>
+        <p>แจ้งข้อมูลหน่วยงานและจำนวนผู้เข้ารับบริการ เพื่อให้ทีมงานแนะนำรูปแบบบริการ</p>
+      </div>
+      <a class="xray-call" href="tel:0926368867">โทร 092-636-8867 ↗</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  function openModal3() {
+    const modal = document.getElementById("modal3");
+    modal.style.display = "flex";
+    modal.setAttribute("aria-hidden", "false");
   }
 
   function closeModal3() {
-    document.getElementById("modal3").style.display = "none";
+    const modal = document.getElementById("modal3");
+    modal.style.display = "none";
+    modal.setAttribute("aria-hidden", "true");
+  }
+</script>
+	<!-- End Modal3-->
+	 
+   <!-- Start Modal4-->
+  <style>
+  #modal4 {
+    position: fixed;
+    inset: 0;
+    z-index: 1100;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    background: rgba(9, 35, 34, .72);
+    backdrop-filter: blur(6px);
   }
 
-  </script>
+  #modal4 .staff-panel {
+    width: min(1100px, 100%);
+    height: min(820px, calc(100vh - 40px));
+    padding: 22px 26px;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: auto minmax(170px, 1fr) auto auto auto auto auto;
+    gap: 9px;
+    border-radius: 20px;
+    background: #fff;
+    color: #173b3b;
+    box-shadow: 0 28px 90px #061e1c66;
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+  }
 
-   <section id="modal4"  style="display:none;" >
-	<modal class="modal" role="dialog" aria-labelledby="modal-title" >
-    <img
-      class="modal-image"
-      src="images/check4.png"
-      alt="ภาพประกอบ"
-    />
+  #modal4 .staff-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 18px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #dce9e5;
+  }
 
-    <div class="modal-content">
-      <h2 id="modal-title">บริการจัดหาบุคลากรทางการแพทย์</h2>
-      <p>บริการจัดหาเจ้าหน้าที่วิชาชีพอิสระ มากด้วย ความรู้ ความสามารถ ประสบการณ์ และ เอกสารประกอบวิชาชีพ สำหรับหน่วยงานตรวจสุขภาพที่ต้องการเจจ้าหน้าที่เสริม เรายินดีจัดหาให้ท่าน
-		ไม่ว่าจะเป็น นักศึกษาพยาบาล ทำหน้าที่วัดความดัน , ผู้ช่วยเทคนิคการแพทย์ ทำหน้าที่เก็บตัวอย่างตรวจ , เจ้าหน้าที่อาชีวอนามัย ทุกท่านล้วนผ่านการฝึกอบรมวิชาชีพและมีความสามารถสูงและบริการที่ดี
-	  </p>
-	    <button class="modal-close" type="button" aria-label="ปิด" onclick="closeModal4()">
+  #modal4 .staff-kicker {
+    color: #087f78;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .12em;
+  }
 
-    &times;
-  </button>
+  #modal4 .staff-title {
+    margin: 5px 0;
+    font-size: clamp(24px, 2.5vw, 32px);
+    line-height: 1.2;
+  }
+
+  #modal4 .staff-intro {
+    max-width: 760px;
+    margin: 0;
+    color: #617675;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  #modal4 .staff-close {
+    flex: 0 0 auto;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #dce9e5;
+    border-radius: 50%;
+    background: #fff;
+    color: #173b3b;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  #modal4 .staff-hero {
+    min-height: 0;
+    display: grid;
+    grid-template-columns: 1fr .9fr;
+    gap: 18px;
+    align-items: center;
+  }
+
+  #modal4 .staff-image {
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    object-fit: cover;
+    border-radius: 14px;
+    background: #e8f5f1;
+  }
+
+  #modal4 .staff-highlights {
+    display: grid;
+    gap: 7px;
+  }
+
+  #modal4 .staff-highlight {
+    display: grid;
+    grid-template-columns: 32px 1fr;
+    gap: 9px;
+    align-items: center;
+    padding: 8px 10px;
+    border: 1px solid #dce9e5;
+    border-radius: 10px;
+    background: #fbfdfc;
+  }
+
+  #modal4 .staff-icon {
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-items: center;
+    border-radius: 9px;
+    background: #e8f5f1;
+    color: #087f78;
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  #modal4 .staff-highlight b,
+  #modal4 .staff-audience b,
+  #modal4 .staff-step h3 {
+    display: block;
+    margin: 0 0 2px;
+    color: #173b3b;
+    font-size: 12px;
+    line-height: 1.35;
+  }
+
+  #modal4 .staff-highlight p,
+  #modal4 .staff-audience p,
+  #modal4 .staff-step p {
+    margin: 0;
+    color: #617675;
+    font-size: 10px;
+    line-height: 1.4;
+  }
+
+  #modal4 .staff-section-title {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.3;
+  }
+
+  #modal4 .staff-audience,
+  #modal4 .staff-steps {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 9px;
+  }
+
+  #modal4 .staff-audience article {
+    padding: 10px 12px;
+    border: 1px solid #dce9e5;
+    border-radius: 11px;
+  }
+
+  #modal4 .staff-audience b {
+    color: #075b59;
+  }
+
+  #modal4 .staff-step {
+    padding: 9px 11px;
+    border-left: 3px solid #087f78;
+    border-radius: 4px 10px 10px 4px;
+    background: #f4f9f6;
+  }
+
+  #modal4 .staff-step span {
+    color: #087f78;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: .1em;
+  }
+
+  #modal4 .staff-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 11px 15px;
+    border-radius: 11px;
+    background: #075b59;
+    color: #fff;
+  }
+
+  #modal4 .staff-contact strong {
+    font-size: 13px;
+  }
+
+  #modal4 .staff-contact p {
+    margin: 2px 0 0;
+    color: #d5e9e2;
+    font-size: 10px;
+  }
+
+  #modal4 .staff-call {
+    flex: 0 0 auto;
+    padding: 8px 13px;
+    border-radius: 99px;
+    background: #fff;
+    color: #075b59;
+    font-size: 11px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  @media (max-width: 700px) {
+    #modal4 {
+      padding: 0;
+    }
+
+    #modal4 .staff-panel {
+      width: 100%;
+      height: 100%;
+      max-height: 100vh;
+      padding: 20px 16px;
+      overflow-y: auto;
+      display: block;
+      border-radius: 0;
+    }
+
+    #modal4 .staff-hero {
+      grid-template-columns: 1fr;
+      margin: 16px 0;
+    }
+
+    #modal4 .staff-image {
+      height: 210px;
+    }
+
+    #modal4 .staff-audience,
+    #modal4 .staff-steps {
+      grid-template-columns: 1fr;
+      margin: 10px 0 18px;
+    }
+
+    #modal4 .staff-section-title {
+      margin-top: 16px;
+    }
+
+    #modal4 .staff-contact {
+      align-items: flex-start;
+      flex-direction: column;
+      margin-top: 18px;
+    }
+  }
+</style>
+
+<div class="page-modal" id="modal4" role="dialog" aria-modal="true"
+     aria-labelledby="staff-title" aria-hidden="true" style="font-family: sarabun;">
+  <div class="staff-panel" style="margin-left: 250px;">
+    <div class="staff-top">
+      <div>
+        <span class="staff-kicker">MOBILE HEALTH CHECKUP STAFFING</span>
+        <h2 class="staff-title" id="staff-title">
+          ทีมบุคลากรพร้อมสนับสนุน<br>
+          งานตรวจสุขภาพเคลื่อนที่ของคุณ
+        </h2>
+        <p class="staff-intro">
+          วางแผนงานตรวจสุขภาพนอกสถานที่ได้มั่นใจขึ้น
+          ด้วยบริการจัดหาบุคลากรตามบทบาทและขอบเขตงานที่ต้องการ
+          พร้อมช่วยประสานทีมและกำหนดการให้สอดคล้องกับหน้างาน
+        </p>
+      </div>
+      <button class="staff-close" type="button" aria-label="ปิดหน้าต่าง"
+              onclick="closeModal4()">×</button>
     </div>
-</modal>
-</section>
-  <script>
-       function openModal4() {
-    document.getElementById("modal4").style.display = "block";
-	
-	
+
+    <div class="staff-hero">
+      <div class="staff-highlights">
+        <article class="staff-highlight">
+          <div class="staff-icon">01</div>
+          <div>
+            <b>จัดทีมตามขอบเขตบริการ</b>
+            <p>ประสานบุคลากรตามบทบาท จำนวน และช่วงเวลาที่หน่วยงานต้องการ</p>
+          </div>
+        </article>
+        <article class="staff-highlight">
+          <div class="staff-icon">02</div>
+          <div>
+            <b>รองรับงานตรวจหลายรูปแบบ</b>
+            <p>ช่วยจัดกำลังคนสำหรับงานตรวจสุขภาพในองค์กร โรงงาน และหน่วยบริการ</p>
+          </div>
+        </article>
+        <article class="staff-highlight">
+          <div class="staff-icon">03</div>
+          <div>
+            <b>ประสานงานก่อนถึงวันตรวจ</b>
+            <p>พูดคุยขอบเขตงาน ตาราง และหน้าที่ให้ชัดเจนก่อนเริ่มบริการ</p>
+          </div>
+        </article>
+      </div>
+
+      <img class="staff-image" src="images/mobile-checkup-team.jpg"
+           alt="ทีมบุคลากรให้บริการตรวจสุขภาพเคลื่อนที่">
+    </div>
+
+    <h3 class="staff-section-title">บุคลากรที่สามารถประสานจัดหา</h3>
+    <div class="staff-audience">
+      <article>
+        <b>บุคลากรทางการแพทย์</b>
+        <p>เช่น แพทย์ พยาบาล หรือนักเทคนิคการแพทย์ ตามขอบเขตงาน</p>
+      </article>
+      <article>
+        <b>เจ้าหน้าที่ประจำจุดตรวจ</b>
+        <p>ช่วยดูแลการลงทะเบียน คัดกรอง และอำนวยความสะดวกแก่ผู้เข้ารับบริการ</p>
+      </article>
+      <article>
+        <b>เจ้าหน้าที่ประสานงาน</b>
+        <p>ช่วยสื่อสารตารางงานและประสานการดำเนินงานระหว่างทีมกับหน่วยงาน</p>
+      </article>
+    </div>
+
+    <h3 class="staff-section-title">ขั้นตอนการใช้บริการ</h3>
+    <div class="staff-steps">
+      <article class="staff-step">
+        <span>STEP 01</span>
+        <h3>แจ้งรายละเอียดงาน</h3>
+        <p>ระบุประเภทงาน สถานที่ จำนวนผู้เข้ารับบริการ และวันที่ต้องการ</p>
+      </article>
+      <article class="staff-step">
+        <span>STEP 02</span>
+        <h3>วางแผนกำลังคน</h3>
+        <p>ตกลงบทบาท จำนวนบุคลากร ตารางเวลา และขอบเขตการประสานงาน</p>
+      </article>
+      <article class="staff-step">
+        <span>STEP 03</span>
+        <h3>ยืนยันและเริ่มบริการ</h3>
+        <p>สรุปรายละเอียดก่อนวันงาน เพื่อให้ทีมและหน่วยงานเตรียมพร้อม</p>
+      </article>
+    </div>
+
+    <div class="staff-contact">
+      <div>
+        <strong>ให้เราช่วยวางแผนทีมสำหรับงานของคุณ</strong>
+        <p>สอบถามรายละเอียดและแจ้งจำนวนบุคลากรที่ต้องการได้เลย</p>
+      </div>
+      <a class="staff-call" href="tel:0926368867">โทร 092-636-8867 ↗</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  function openModal4() {
+    const modal = document.getElementById("modal4");
+    modal.style.display = "flex";
+    modal.setAttribute("aria-hidden", "false");
   }
 
   function closeModal4() {
-    document.getElementById("modal4").style.display = "none";
+    const modal = document.getElementById("modal4");
+    modal.style.display = "none";
+    modal.setAttribute("aria-hidden", "true");
+  }
+</script>
+   <!-- End Modal4-->
+
+	<!-- start modal5 -->
+<style>
+  #modal5 {
+    position: fixed;
+    inset: 0;
+    z-index: 1100;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    background: rgba(9, 35, 34, .72);
+    backdrop-filter: blur(6px);
   }
 
-  </script>
+  #modal5 .equipment-panel {
+    width: min(1100px, 100%);
+    height: min(820px, calc(100vh - 40px));
+    padding: 22px 26px;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: auto minmax(170px, 1fr) auto auto auto auto auto;
+    gap: 9px;
+    border-radius: 20px;
+    background: #fff;
+    color: #173b3b;
+    box-shadow: 0 28px 90px #061e1c66;
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+  }
 
-   <section id="modal5"  style="display:none;" >
-	<modal class="modal" role="dialog" aria-labelledby="modal-title" >
-    <img
-      class="modal-image"
-      src="images/check5.png"
-      alt="ภาพประกอบ"
-    />
+  #modal5 .equipment-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 18px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #dce9e5;
+  }
 
-    <div class="modal-content">
-      <h2 id="modal-title">บริการให้เช่าเครื่องตรวจอาชีวอนามัย</h2>
-      <p>บริการให้เช่าเครื่องตรวจอาชีวอนามัย เครื่องตรวจคลื่นหัวใจ เครื่องเป่าปอด เครื่องตรวจตาเชิงลึก ตู้ตรวจการได้ยินพร้อมติดตั้ง และเจ้าหน้าที่ประจำเครื่อง บริการท่านด้วยเครื่องมือที่ปรับค่ามาตรฐานตามเกณฑ์ ให้ผลที่แม่นยำ
-	  </p>
-	    <button class="modal-close" type="button" aria-label="ปิด" onclick="closeModal5()">
+  #modal5 .equipment-kicker {
+    color: #087f78;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .12em;
+  }
 
-    &times;
-  </button>
+  #modal5 .equipment-title {
+    margin: 5px 0;
+    font-size: clamp(24px, 2.5vw, 32px);
+    line-height: 1.2;
+  }
+
+  #modal5 .equipment-intro {
+    max-width: 760px;
+    margin: 0;
+    color: #617675;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  #modal5 .equipment-close {
+    flex: 0 0 auto;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #dce9e5;
+    border-radius: 50%;
+    background: #fff;
+    color: #173b3b;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  #modal5 .equipment-hero {
+    min-height: 0;
+    display: grid;
+    grid-template-columns: 1fr .9fr;
+    gap: 18px;
+    align-items: center;
+  }
+
+  #modal5 .equipment-image {
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    object-fit: cover;
+    border-radius: 14px;
+    background: #e8f5f1;
+  }
+
+  #modal5 .equipment-highlights {
+    display: grid;
+    gap: 7px;
+  }
+
+  #modal5 .equipment-highlight {
+    display: grid;
+    grid-template-columns: 32px 1fr;
+    gap: 9px;
+    align-items: center;
+    padding: 8px 10px;
+    border: 1px solid #dce9e5;
+    border-radius: 10px;
+    background: #fbfdfc;
+  }
+
+  #modal5 .equipment-icon {
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-items: center;
+    border-radius: 9px;
+    background: #e8f5f1;
+    color: #087f78;
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  #modal5 .equipment-highlight b,
+  #modal5 .equipment-audience b,
+  #modal5 .equipment-step h3 {
+    display: block;
+    margin: 0 0 2px;
+    color: #173b3b;
+    font-size: 12px;
+    line-height: 1.35;
+  }
+
+  #modal5 .equipment-highlight p,
+  #modal5 .equipment-audience p,
+  #modal5 .equipment-step p {
+    margin: 0;
+    color: #617675;
+    font-size: 10px;
+    line-height: 1.4;
+  }
+
+  #modal5 .equipment-section-title {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.3;
+  }
+
+  #modal5 .equipment-audience,
+  #modal5 .equipment-steps {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 9px;
+  }
+
+  #modal5 .equipment-audience article {
+    padding: 10px 12px;
+    border: 1px solid #dce9e5;
+    border-radius: 11px;
+  }
+
+  #modal5 .equipment-audience b {
+    color: #075b59;
+  }
+
+  #modal5 .equipment-step {
+    padding: 9px 11px;
+    border-left: 3px solid #087f78;
+    border-radius: 4px 10px 10px 4px;
+    background: #f4f9f6;
+  }
+
+  #modal5 .equipment-step span {
+    color: #087f78;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: .1em;
+  }
+
+  #modal5 .equipment-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 11px 15px;
+    border-radius: 11px;
+    background: #075b59;
+    color: #fff;
+  }
+
+  #modal5 .equipment-contact strong {
+    font-size: 13px;
+  }
+
+  #modal5 .equipment-contact p {
+    margin: 2px 0 0;
+    color: #d5e9e2;
+    font-size: 10px;
+  }
+
+  #modal5 .equipment-call {
+    flex: 0 0 auto;
+    padding: 8px 13px;
+    border-radius: 99px;
+    background: #fff;
+    color: #075b59;
+    font-size: 11px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  @media (max-width: 700px) {
+    #modal5 {
+      padding: 0;
+    }
+
+    #modal5 .equipment-panel {
+      width: 100%;
+      height: 100%;
+      max-height: 100vh;
+      padding: 20px 16px;
+      overflow-y: auto;
+      display: block;
+      border-radius: 0;
+    }
+
+    #modal5 .equipment-hero {
+      grid-template-columns: 1fr;
+      margin: 16px 0;
+    }
+
+    #modal5 .equipment-image {
+      height: 210px;
+    }
+
+    #modal5 .equipment-audience,
+    #modal5 .equipment-steps {
+      grid-template-columns: 1fr;
+      margin: 10px 0 18px;
+    }
+
+    #modal5 .equipment-section-title {
+      margin-top: 16px;
+    }
+
+    #modal5 .equipment-contact {
+      align-items: flex-start;
+      flex-direction: column;
+      margin-top: 18px;
+    }
+  }
+</style>
+
+<div class="page-modal" id="modal5" role="dialog" aria-modal="true"
+     aria-labelledby="equipment-title" aria-hidden="true">
+  <div class="equipment-panel">
+    <div class="equipment-top">
+      <div>
+        <span class="equipment-kicker">OCCUPATIONAL HEALTH EQUIPMENT</span>
+        <h2 class="equipment-title" id="equipment-title">
+          บริการให้เช่าเครื่องมือตรวจสุขภาพด้านอาชีวอนามัย
+        </h2>
+        <p class="equipment-intro">
+          วางแผนตรวจสุขภาพในสถานประกอบการได้สะดวกขึ้น
+          ด้วยบริการให้เช่าเครื่องมือตามลักษณะงานและช่วงเวลาที่ต้องการ
+          ช่วยให้หน่วยงานจัดการตรวจได้เป็นระบบ โดยไม่จำเป็นต้องจัดหาอุปกรณ์ทุกชิ้นเอง
+        </p>
+      </div>
+      <button class="equipment-close" type="button" aria-label="ปิดหน้าต่าง"
+              onclick="closeModal5()">×</button>
     </div>
-</modal>
-</section>
-  <script>
-       function openModal5() {
-    document.getElementById("modal5").style.display = "block";
-	
-	
+
+    <div class="equipment-hero">
+      <div class="equipment-highlights">
+        <article class="equipment-highlight">
+          <div class="equipment-icon">01</div>
+          <div>
+            <b>เลือกอุปกรณ์ให้เหมาะกับงาน</b>
+            <p>แจ้งลักษณะงานและรายการตรวจที่ต้องการ เพื่อสอบถามอุปกรณ์ที่รองรับ</p>
+          </div>
+        </article>
+        <article class="equipment-highlight">
+          <div class="equipment-icon">02</div>
+          <div>
+            <b>วางแผนช่วงเวลาเช่าได้</b>
+            <p>ประสานกำหนดการและเงื่อนไขเช่าให้สอดคล้องกับแผนตรวจของหน่วยงาน</p>
+          </div>
+        </article>
+        <article class="equipment-highlight">
+          <div class="equipment-icon">03</div>
+          <div>
+            <b>สอบถามรายละเอียดก่อนใช้งาน</b>
+            <p>พูดคุยเรื่องการจัดส่ง วิธีใช้งาน เอกสาร และเงื่อนไขการคืนอุปกรณ์</p>
+          </div>
+        </article>
+      </div>
+
+      <img class="equipment-image"
+           src="images/occupational-health-equipment.jpg"
+           alt="เครื่องมือตรวจสุขภาพด้านอาชีวอนามัย">
+    </div>
+
+    <h3 class="equipment-section-title">เหมาะสำหรับ</h3>
+    <div class="equipment-audience">
+      <article>
+        <b>โรงงานและสถานประกอบการ</b>
+        <p>จัดเตรียมเครื่องมือสำหรับแผนตรวจสุขภาพพนักงานในแต่ละรอบ</p>
+      </article>
+      <article>
+        <b>ทีมตรวจสุขภาพเคลื่อนที่</b>
+        <p>เสริมอุปกรณ์ให้พร้อมตามประเภทงานและจำนวนผู้เข้ารับบริการ</p>
+      </article>
+      <article>
+        <b>หน่วยงานและคลินิก</b>
+        <p>สอบถามอุปกรณ์เช่าสำหรับช่วงที่มีความต้องการใช้งานเพิ่มเติม</p>
+      </article>
+    </div>
+
+    <h3 class="equipment-section-title">ขั้นตอนการใช้บริการ</h3>
+    <div class="equipment-steps">
+      <article class="equipment-step">
+        <span>STEP 01</span>
+        <h3>แจ้งรายการและกำหนดการ</h3>
+        <p>ระบุประเภทเครื่องมือ สถานที่ และช่วงเวลาที่ต้องการเช่า</p>
+      </article>
+      <article class="equipment-step">
+        <span>STEP 02</span>
+        <h3>ตรวจสอบรายละเอียด</h3>
+        <p>ทีมงานแจ้งความพร้อม ราคา เงื่อนไข และวิธีเตรียมอุปกรณ์</p>
+      </article>
+      <article class="equipment-step">
+        <span>STEP 03</span>
+        <h3>ยืนยันและรับอุปกรณ์</h3>
+        <p>ยืนยันการจองและนัดหมายการจัดส่งหรือรับอุปกรณ์ตามที่ตกลง</p>
+      </article>
+    </div>
+
+    <div class="equipment-contact">
+      <div>
+        <strong>กำลังวางแผนตรวจสุขภาพในหน่วยงาน?</strong>
+        <p>สอบถามรายการเครื่องมือ ราคา และช่วงเวลาเช่าที่พร้อมให้บริการ</p>
+      </div>
+      <a class="equipment-call" href="tel:0926368867">โทร 092-636-8867 ↗</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  function openModal5() {
+    const modal = document.getElementById("modal5");
+    modal.style.display = "flex";
+    modal.setAttribute("aria-hidden", "false");
   }
 
   function closeModal5() {
-    document.getElementById("modal5").style.display = "none";
+    const modal = document.getElementById("modal5");
+    modal.style.display = "none";
+    modal.setAttribute("aria-hidden", "true");
   }
+</script>
 
-  </script>
-	
+
+<!-- end modal5 -->
 	<!-- Start Footer -->
 	<footer class="footer-box">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<p class="footer-company-name">All Rights Reserved. &copy; 2018 <a href="#">R&B Medical Laboratory</a> Design By : <a href="https://html.design/">R&B Developer team/a></p>
+					<p class="footer-company-name">All Rights Reserved. &copy; 2018 <a href="#">R&B Medical
+							Laboratory</a> Design By : <a href="https://html.design/">R&B Developer team/a></p>
 				</div>
 			</div>
 		</div>
 	</footer>
 	<!-- End Footer -->
-	
+
 	<a href="#" id="scroll-to-top" class="new-btn-d br-2"><i class="fa fa-angle-up"></i></a>
 
 	<!-- ALL JS FILES -->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-    <!-- ALL PLUGINS -->
+	<!-- ALL PLUGINS -->
 	<script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.pogo-slider.min.js"></script> 
+	<script src="js/jquery.pogo-slider.min.js"></script>
 	<script src="js/slider-index.js"></script>
 	<script src="js/smoothscroll.js"></script>
 	<script src="js/TweenMax.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/form-validator.min.js"></script>
-    <script src="js/contact-form-script.js"></script>
-	<script src="js/isotope.min.js"></script>	
-	<script src="js/images-loded.min.js"></script>	
-    <script src="js/custom.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+	<script src="js/contact-form-script.js"></script>
+	<script src="js/isotope.min.js"></script>
+	<script src="js/images-loded.min.js"></script>
+	<script src="js/custom.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+		integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+		integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+		crossorigin="anonymous"></script>
 </body>
+
 </html>
